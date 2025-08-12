@@ -1,0 +1,438 @@
+:root {
+    /*Colores Norte*/
+    --fondo-norte: #540804;
+    --texto-norte: #EA8C55;
+    --fondo-catamarca: #81171B;
+    --fondo-chaco: #94231e;
+    --fondo-corrientes: #a23020;
+    --fondo-formosa: #ad2e24;
+    --fondo-jujuy: #b8392c;
+    --fondo-la-rioja: #c75146;
+    --fondo-misiones: #d96a4e;
+    --fondo-salta: #e17a50;
+    --fondo-santiago-del-estero: #e88652;
+    --fondo-tucuman: #EA8C55;
+
+    /*Colores Centro*/
+    --fondo-centro: #3C4B22;
+    --texto-centro: #b8860b;
+    --fondo-bsas: #6b8e23;
+    --fondo-caba: #7a9527;
+    --fondo-cordoba: #889d2b;
+    --fondo-entre-rios: #9acd32;
+    --fondo-la-pampa: #adc43c;
+    --fondo-mendoza: #c2b946;
+    --fondo-san-juan: #daa520;
+    --fondo-san-luis: #c89516;
+    --fondo-santa-fe: #b8860b;
+
+    /*Colores Sur*/
+    --fondo-sur: #03045E;
+    --texto-sur: #caf0f8;
+    --fondo-chubut: #0077b6;
+    --fondo-neuquen: #3096cd;
+    --fondo-rio-negro: #00b4d8;
+    --fondo-santa-cruz: #90e0ef;
+    --fondo-tierra-del-fuego: #caf0f8;
+
+    /*Colores generales*/
+    --items-header: #c14d45;
+    --fondo-blanco: #f7f2e2;
+    --texto-naranja-fuerte: #b72e24;
+    --azul-oscuro-general: #041b30;
+
+    /*Colores mapa*/
+    --identificador-norte: #972916;
+    --identificador-centro: #0f5618;
+    --identificador-sur: #0c1d75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--azul-oscuro-general);
+}
+
+.logo {
+    width: 150px;
+}
+
+.txt_logo {
+    font-family: 'Playfair Display';
+    color: #bf1509;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.item_navbar {
+    color: #c14d45;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* INDEX */
+
+.contenedor_video,
+.contenedor_descubrir,
+footer,
+.inicio_mapa,
+.seccion_mapa {
+    background-color: #103c65;
+}
+
+.titulo {
+    font-family: 'Playfair Display';
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    color: var(--texto-naranja-fuerte);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    font-family: 'Cormorant Garamond';
+    font-size: 30px;
+    text-align: center;
+    color: #c3392f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.descripcion_index {
+    background-color: var(--fondo-blanco);
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.contenedor_descubrir {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.titulo_descubrir {
+    font-family: 'Playfair Display';
+    color: var(--texto-naranja-fuerte);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.titulo_tarjetas {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0;
+    color: var(--fondo-blanco);
+}
+
+.img_tarjetas {
+    width: 300px;
+}
+
+.contenedor_mapa {
+    background-color: var(--fondo-blanco);
+    padding: 15px;
+}
+
+.titulo_mapa {
+    font-family: 'Playfair Display';
+    color: var(--azul-oscuro-general-general);
+    font-size: 30px;
+}
+
+.descripcion_mapa {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: var(--azul-oscuro-general-general);
+    padding: 10px 0;
+}
+
+.btn_mapa,
+.btn_contacto {
+    background-color: var(--azul-oscuro-general);
+    font-family: 'Poppins';
+    font-size: 17px;
+    padding: 10px;
+    color: var(--fondo-blanco);
+}
+
+footer {
+    color: var(--fondo-blanco);
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.foot_introduccion,
+.foot_email {
+    display: inline;
+    padding: 0 50px;
+}
+
+.fa-brands {
+    padding: 0 20px;
+}
+
+.contenedor_copyright {
+    background-color: var(--fondo-blanco);
+    padding: 10px 0;
+    text-align: center;
+    color: var(--azul-oscuro-general);
+}
+
+.fa-copyright,
+.txt_copyrigh {
+    display: inline;
+}
+
+/*NORTE*/
+
+.banner_norte {
+    background-color: var(--fondo-norte);
+}
+
+.video_norte,
+.video_centro,
+.video_sur {
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.titulo_norte {
+    font-family: 'Playfair Display';
+    color: var(--texto-norte);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.subtitulo_norte {
+    font-family: 'Cormorant Garamond';
+    color: var(--texto-norte);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+.provincia {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+summary {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.titulo_lugar {
+    font-family: 'Poppins';
+    color: var(--texto-norte);
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.img_lugar {
+    width: 500px;
+}
+
+/*CENTRO*/
+.banner_centro {
+    background-color: var(--fondo-centro);
+}
+
+.titulo_centro {
+    font-family: 'Playfair Display';
+    color: var(--texto-centro);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.subtitulo_centro {
+    font-family: 'Cormorant Garamond';
+    color: var(--texto-centro);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+/*SUR*/
+.banner_sur {
+    background-color: var(--fondo-sur);
+}
+
+.titulo_sur {
+    font-family: 'Playfair Display';
+    color: var(--texto-sur);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.subtitulo_sur {
+    font-family: 'Cormorant Garamond';
+    color: var(--texto-sur);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+/*MAPA*/
+.titulo_mapa {
+    font-family: 'Playfair Display';
+    color: var(--fondo-blanco);
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.subtitulo_mapa {
+    font-family: 'Cormorant Garamond';
+    color: var(--fondo-blanco);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.seccion_mapa {
+    color: var(--fondo-blanco);
+    padding: 20px;
+}
+
+.img_mapa {
+    width: 500px;
+    display: inline;
+}
+
+.titulo_identificadores {
+    font: 400 30px 'Poppins';
+}
+
+.txt_identificador {
+    font: 300 20px 'Poppins';
+}
+
+.icono_identificador,
+.txt_identificador {
+    display: inline;
+    padding: 5px;
+}
+
+.seccion_busqueda {
+    background-color: var(--fondo-blanco);
+}
+
+.contenedor_buscar,
+.contenedor_lugares {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Playfair Display';
+    color: var(--azul-oscuro-general);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#provincias {
+    padding: 3px 15px;
+    font-family: 'Poppins';
+    color: var(--azul-oscuro-general);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.lugar_mapa {
+    background-color: #103c65;
+    color: var(--fondo-blanco);
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 50px;
+    width: 50%;
+    margin: 20px 0;
+    padding: 15px 0;
+    text-align: center;
+    margin-left: 300px;
+}
+
+/*CONTACTO*/
+.inicio_contacto {
+    background-color: var(--fondo-blanco);
+    color: var(--azul-oscuro-general);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo_contacto {
+    font-family: 'Playfair Display';
+    color: var(--azul-oscuro-general);
+    font-size: 40px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.subtitulo_contacto {
+    font-family: 'Cormorant Garamond';
+    color: var(--azul-oscuro-general);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.seccion_form_contacto {
+    background-color: #103c65;
+    color: var(--fondo-blanco);
+    font: 300 20px 'Poppins';
+    padding-left: 700px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+label {
+    padding: 5px 30px;
+}
+
+input,
+textarea {
+    padding: 5px;
+    width: 50%;
+    margin: 0 0 15px 30px;
+    font-family: 'Poppins';
+    border-radius: 5px;
+    border: none;
+}
+
+.btn_contacto {
+    border-radius: 5px;
+    border: none;
+    margin-left: 30px;
+}
