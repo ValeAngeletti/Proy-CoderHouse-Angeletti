@@ -12,24 +12,37 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="contenedor_logo">
-            <img src="../assets/img/logo.png" alt="logo de instante austral" class="logo">
-            <h3 class="txt_logo">Instante Austral</h3>
-        </div>
-        <nav>
-            <ul class="lista_nav">
-                <li><a href="../index.html" class="item_navbar">Inicio</a></li>
-                <li><a href="norte.html" class="item_navbar">Norte</a></li>
-                <li><a href="centro.html" class="item_navbar">Centro</a></li>
-                <li><a href="sur.html" class="item_navbar">Sur</a></li>
-                <li><a href="mapa.html" class="item_navbar">Mapa</a></li>
-                <li><a href="contacto.html" class="item_navbar">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand txt_logo fs-3 fw-bold wrap text-center">
+                    <img src="../assets/img/logo.png" alt="logo de instante austral"
+                        class="logo d-inline-block align-text-center">
+                    Instante
+                    Austral
+                </a>
+                <button class="navbar-toggler border border-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto lista_nav me-2">
+                        <li class="nav-item"><a href="../index.html" class="nav-link fs-5 item_navbar">Inicio</a></li>
+                        <li class="nav-item"><a href="norte.html" class="nav-link fs-5 item_navbar">Norte</a></li>
+                        <li class="nav-item"><a href="centro.html" class="nav-link fs-5 item_navbar">Centro</a>
+                        </li>
+                        <li class="nav-item"><a href="sur.html" class="nav-link fs-5 item_navbar">Sur</a></li>
+                        <li class="nav-item"><a href="mapa.html" class="nav-link fs-5 item_navbar">Mapa</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link fs-5 item_navbar">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -101,17 +114,28 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p class="foot_introduccion">¿Dudas, problemas, sugerencias? Contactanos</p>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-        <p class="foot_email">hola.instanteaustral@gmail.com</p>
-        <div class="contenedor_copyright">
+    <footer class="fs-5 text-center pt-4">
+        <div
+            class="contenedor_foot d-flex w-100 flex-md-row flex-column justify-content-around align-items-center gap-4 py-3">
+
+            <p class="foot_introduccio m-0">¿Dudas, problemas, sugerencias? Contactanos</p>
+            <div class="iconos_footer d-flex flex-row gap-5 justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook shadow"></i>
+                <i class="fa-brands fa-instagram shadow"></i>
+                <i class="fa-brands fa-whatsapp shadow"></i>
+            </div>
+            <p class="foot_email m-0">hola.instanteaustral@gmail.com</p>
+        </div>
+        <hr class="w-50 mx-auto">
+        <div
+            class="contenedor_copyright fs-6 d-flex flex-md-row flex-column gap-3 text-center justify-content-center align-items-center align-text-center py-3">
             <i class="fa-regular fa-copyright"></i>
-            <p class="txt_copyrigh">Copyright Instante Austral 2025 por Valentina Angeletti</p>
+            <p class="txt_copyrigh align-text-center m-0">Copyright Instante Austral 2025 por Valentina Angeletti</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

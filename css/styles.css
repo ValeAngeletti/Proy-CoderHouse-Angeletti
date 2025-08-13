@@ -40,6 +40,7 @@
     --fondo-blanco: #f7f2e2;
     --texto-naranja-fuerte: #b72e24;
     --azul-oscuro-general: #041b30;
+    --color-logo: #bf1509;
 
     /*Colores mapa*/
     --identificador-norte: #972916;
@@ -50,6 +51,36 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.txt_logo,
+.titulo,
+.subtitulo,
+.titulo_descubrir,
+.titulo_mapa,
+.titulo_contacto,
+.subtitulo_contacto,
+.titulo_norte,
+.subtitulo_norte,
+.titulo_centro,
+.subtitulo_centro,
+.titulo_sur,
+.subtitulo_sur {
+    font-family: 'Playfair Display';
+}
+
+.item_navbar,
+.descripcion_index,
+.titulo_tarjetas,
+.descripcion_mapa,
+.btn_mapa,
+.btn_contacto,
+footer,
+.seccion_form_contacto,
+input,
+textarea {
+    font-family: 'Poppins';
 }
 
 header {
@@ -57,29 +88,21 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 80px;
 }
 
 .txt_logo {
-    font-family: 'Playfair Display';
-    color: #bf1509;
-    font-size: 30px;
-    margin-bottom: 10px;
+
+    color: var(--color-logo) !important;
 }
 
-ul {
-    list-style: none;
+.item_navbar,
+footer {
+    color: #c14d45 !important;
 }
 
-.item_navbar {
-    color: #c14d45;
-    font-family: 'Poppins';
-    font-size: 18px;
-    padding-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23c14d45' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 /* INDEX */
@@ -88,149 +111,87 @@ a {
 .contenedor_descubrir,
 footer,
 .inicio_mapa,
-.seccion_mapa {
+.seccion_mapa,
+.seccion_form_contacto {
     background-color: #103c65;
 }
 
 .titulo {
-    font-family: 'Playfair Display';
-    font-weight: bolder;
-    font-size: 50px;
-    text-align: center;
     color: var(--texto-naranja-fuerte);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 6rem;
 }
 
 .subtitulo {
-    font-family: 'Cormorant Garamond';
-    font-size: 30px;
-    text-align: center;
+    font-size: 3rem;
     color: #c3392f;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .descripcion_index {
     background-color: var(--fondo-blanco);
-    padding: 20px;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
-
-.contenedor_descubrir {
-    text-align: center;
-    padding: 15px 0;
 }
 
 .titulo_descubrir {
-    font-family: 'Playfair Display';
     color: var(--texto-naranja-fuerte);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    font-size: 4rem;
 }
 
-.titulo_tarjetas {
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 25px;
-    padding: 10px 0;
+.carousel {
+    width: 20rem;
+    height: 30rem;
+}
+
+.titulo_tarjetas,
+.btn_mapa,
+.btn_contacto,
+.lugar_mapa,
+.seccion_form_contacto {
     color: var(--fondo-blanco);
 }
 
 .img_tarjetas {
     width: 300px;
+    height: auto;
+    object-fit: cover;
 }
 
-.contenedor_mapa {
+.contenedor_mapa,
+.inicio_contacto {
     background-color: var(--fondo-blanco);
-    padding: 15px;
 }
 
 .titulo_mapa {
-    font-family: 'Playfair Display';
-    color: var(--azul-oscuro-general-general);
-    font-size: 30px;
+    color: var(--azul-oscuro-general) !important;
+    font-size: 4rem !important;
 }
 
-.descripcion_mapa {
-    font-family: 'Poppins';
-    font-size: 20px;
-    color: var(--azul-oscuro-general-general);
-    padding: 10px 0;
-}
-
-.btn_mapa,
-.btn_contacto {
-    background-color: var(--azul-oscuro-general);
-    font-family: 'Poppins';
-    font-size: 17px;
-    padding: 10px;
-    color: var(--fondo-blanco);
-}
-
-footer {
-    color: var(--fondo-blanco);
-    font-family: 'Poppins';
-    font-size: 16px;
-    text-align: center;
-    padding: 20px 0 0 0;
-}
-
-.foot_introduccion,
-.foot_email {
-    display: inline;
-    padding: 0 50px;
-}
-
-.fa-brands {
-    padding: 0 20px;
-}
-
-.contenedor_copyright {
-    background-color: var(--fondo-blanco);
-    padding: 10px 0;
-    text-align: center;
+.descripcion_mapa,
+.inicio_contacto,
+.titulo_contacto,
+.subtitulo_contacto {
     color: var(--azul-oscuro-general);
 }
 
-.fa-copyright,
-.txt_copyrigh {
-    display: inline;
+.btn_mapa,
+.btn_contacto,
+footer {
+    background-color: var(--azul-oscuro-general);
 }
+
 
 /*NORTE*/
 
-.banner_norte {
-    background-color: var(--fondo-norte);
-}
-
-.video_norte,
-.video_centro,
-.video_sur {
-    width: 100%;
+.videos_banners {
     pointer-events: none;
 }
 
-
 .titulo_norte {
-    font-family: 'Playfair Display';
     color: var(--texto-norte);
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 6rem;
 }
 
 .subtitulo_norte {
-    font-family: 'Cormorant Garamond';
     color: var(--texto-norte);
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-    font-style: italic;
+    font-size: 3rem;
 }
 
 .provincia {
@@ -256,51 +217,30 @@ summary {
 }
 
 /*CENTRO*/
-.banner_centro {
-    background-color: var(--fondo-centro);
-}
 
 .titulo_centro {
-    font-family: 'Playfair Display';
     color: var(--texto-centro);
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 6rem;
 }
 
 .subtitulo_centro {
-    font-family: 'Cormorant Garamond';
     color: var(--texto-centro);
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-    font-style: italic;
+    font-size: 4rem;
 }
 
 /*SUR*/
-.banner_sur {
-    background-color: var(--fondo-sur);
-}
 
 .titulo_sur {
-    font-family: 'Playfair Display';
     color: var(--texto-sur);
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 6rem;
+
 }
 
 .subtitulo_sur {
     font-family: 'Cormorant Garamond';
     color: var(--texto-sur);
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-    font-style: italic;
+    font-size: 4rem;
+
 }
 
 /*MAPA*/
@@ -368,7 +308,6 @@ summary {
 
 .lugar_mapa {
     background-color: #103c65;
-    color: var(--fondo-blanco);
     font-family: 'Poppins';
     font-size: 20px;
     font-weight: 200;
@@ -381,58 +320,65 @@ summary {
 }
 
 /*CONTACTO*/
-.inicio_contacto {
-    background-color: var(--fondo-blanco);
-    color: var(--azul-oscuro-general);
-    text-align: center;
-    padding: 20px 0;
-}
 
 .titulo_contacto {
-    font-family: 'Playfair Display';
-    color: var(--azul-oscuro-general);
-    font-size: 40px;
-    padding: 10px 0;
-    text-align: center;
+    font-size: 5rem;
 }
 
 .subtitulo_contacto {
-    font-family: 'Cormorant Garamond';
-    color: var(--azul-oscuro-general);
-    font-size: 30px;
-    text-align: center;
-    font-weight: 500;
+    font-size: 2.5rem;
 }
 
-.seccion_form_contacto {
-    background-color: #103c65;
-    color: var(--fondo-blanco);
-    font: 300 20px 'Poppins';
-    padding-left: 700px;
-}
 
-label,
 input,
 textarea {
-    display: block;
+    border: none;
 }
 
 label {
-    padding: 5px 30px;
+    font-size: 1.5rem;
 }
 
-input,
-textarea {
-    padding: 5px;
-    width: 50%;
-    margin: 0 0 15px 30px;
-    font-family: 'Poppins';
-    border-radius: 5px;
-    border: none;
+.carrusel_contcato {
+    width: 38rem;
+    height: 40rem;
 }
 
-.btn_contacto {
-    border-radius: 5px;
-    border: none;
-    margin-left: 30px;
+@media screen and (max-width: 768px) {
+
+    .titulo,
+    .titulo_contacto,
+    .titulo_norte,
+    .titulo_centro,
+    .titulo_sur {
+        font-size: 2.7rem;
+    }
+
+    .subtitulo,
+    .subtitulo_contacto,
+    .subtitulo_norte,
+    .subtitulo_centro,
+    .subtitulo_sur {
+        font-size: 1.5rem;
+        padding: 0 1rem !important;
+    }
+
+    .descripcion_index {
+        font-size: 0.5rem !important;
+        padding: 0.5rem !important;
+    }
+
+    .titulo_descubrir,
+    .titulo_mapa {
+        font-size: 2.5rem !important;
+    }
+
+    .seccion_form_contacto {
+        padding: 1rem !important;
+    }
+
+    .carrusel_contcato {
+        width: 100%;
+        height: 15rem;
+    }
 }
