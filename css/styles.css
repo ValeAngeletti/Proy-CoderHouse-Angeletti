@@ -58,7 +58,7 @@
 .titulo,
 .subtitulo,
 .titulo_descubrir,
-.titulo_mapa,
+.titulo_mapa-index,
 .titulo_contacto,
 .subtitulo_contacto,
 .titulo_norte,
@@ -66,7 +66,10 @@
 .titulo_centro,
 .subtitulo_centro,
 .titulo_sur,
-.subtitulo_sur {
+.subtitulo_sur,
+.recomendaciones-mapa-modal,
+.titulo_mapa,
+.subtitulo_mapa {
     font-family: 'Playfair Display';
 }
 
@@ -79,7 +82,10 @@
 footer,
 .seccion_form_contacto,
 input,
-textarea {
+textarea,
+.titulo_provincias-mapa,
+.descripcion-mapa-modal,
+.modal-title {
     font-family: 'Poppins';
 }
 
@@ -101,8 +107,70 @@ footer {
     color: #c14d45 !important;
 }
 
+.nav-link.active {
+    color: var(--color-logo) !important;
+    border-bottom: 2px solid var(--color-logo);
+}
+
+.item_navbar {
+    padding: 0 1rem !important;
+    transition: transform 0.3s !important;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 8px;
+    background: radial-gradient(ellipse at center, rgba(241, 177, 177, 0.502) 0%, transparent 80%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+/**/
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23c14d45' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.nombre-provincia {
+    font-size: 2rem !important;
+    padding: 1.5rem !important;
+}
+
+.btn-modal {
+    border: 2px solid white !important;
+    color: white !important;
+    padding: 0.2rem 2rem !important;
+    font-size: 1.5rem !important;
+}
+
+.descripcion-modal {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.dimension-carrusel {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /* INDEX */
@@ -116,9 +184,10 @@ footer,
     background-color: #103c65;
 }
 
-.titulo {
-    color: var(--texto-naranja-fuerte);
-    font-size: 6rem;
+.titulo,
+.titulo_mapa {
+    color: var(--texto-naranja-fuerte) !important;
+    font-size: 6rem !important;
 }
 
 .subtitulo {
@@ -126,7 +195,8 @@ footer,
     color: #c3392f;
 }
 
-.descripcion_index {
+.descripcion_index,
+.modal-header {
     background-color: var(--fondo-blanco);
 }
 
@@ -143,8 +213,9 @@ footer,
 .titulo_tarjetas,
 .btn_mapa,
 .btn_contacto,
-.lugar_mapa,
-.seccion_form_contacto {
+.seccion_form_contacto,
+.subtitulo_mapa,
+.titulo_provincias-mapa {
     color: var(--fondo-blanco);
 }
 
@@ -159,15 +230,13 @@ footer,
     background-color: var(--fondo-blanco);
 }
 
-.titulo_mapa {
-    color: var(--azul-oscuro-general) !important;
-    font-size: 4rem !important;
-}
-
 .descripcion_mapa,
 .inicio_contacto,
 .titulo_contacto,
-.subtitulo_contacto {
+.subtitulo_contacto,
+.recomendaciones-mapa-modal,
+.modal-title,
+.titulo_mapa-index {
     color: var(--azul-oscuro-general);
 }
 
@@ -177,6 +246,9 @@ footer {
     background-color: var(--azul-oscuro-general);
 }
 
+.titulo_mapa-index {
+    font-size: 4rem;
+}
 
 /*NORTE*/
 
@@ -196,13 +268,6 @@ footer {
 
 .provincia {
     width: 100%;
-    padding: 20px 10px;
-}
-
-summary {
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .titulo_lugar {
@@ -212,8 +277,25 @@ summary {
     padding: 10px 0;
 }
 
-.img_lugar {
-    width: 500px;
+
+.lugar_provincia_prueba {
+    background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
+    height: 10rem;
+    background-size: cover;
+}
+
+.degrade {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100%;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /*CENTRO*/
@@ -243,80 +325,56 @@ summary {
 }
 
 /*MAPA*/
-.titulo_mapa {
-    font-family: 'Playfair Display';
-    color: var(--fondo-blanco);
-    font-size: 40px;
-    padding: 10px 0;
+.titulo_mapa,
+.titulo_mapa-index {
+    padding-top: 1rem;
     text-align: center;
 }
 
 .subtitulo_mapa {
-    font-family: 'Cormorant Garamond';
-    color: var(--fondo-blanco);
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
-    font-weight: 400;
 }
 
 .seccion_mapa {
-    color: var(--fondo-blanco);
     padding: 20px;
 }
 
-.img_mapa {
-    width: 500px;
-    display: inline;
-}
-
-.titulo_identificadores {
-    font: 400 30px 'Poppins';
-}
-
-.txt_identificador {
-    font: 300 20px 'Poppins';
-}
-
-.icono_identificador,
-.txt_identificador {
-    display: inline;
-    padding: 5px;
-}
-
-.seccion_busqueda {
-    background-color: var(--fondo-blanco);
-}
-
-.contenedor_buscar,
-.contenedor_lugares {
-    text-align: center;
-    padding: 20px 0;
-    font-family: 'Playfair Display';
-    color: var(--azul-oscuro-general);
-    font-size: 25px;
-    font-weight: 500;
-}
-
-#provincias {
-    padding: 3px 15px;
-    font-family: 'Poppins';
-    color: var(--azul-oscuro-general);
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.lugar_mapa {
-    background-color: #103c65;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 200;
-    border-radius: 50px;
+.img_mapa,
+.provincias-mapa {
     width: 50%;
-    margin: 20px 0;
-    padding: 15px 0;
-    text-align: center;
-    margin-left: 300px;
 }
+
+.titulo_provincias-mapa,
+.recomendaciones-mapa-modal {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.contenido-modal-mapa {
+    display: flex;
+}
+
+.mapa-modal {
+    width: 50%;
+    height: 30rem;
+}
+
+.txt-mapa-modal {
+    width: 50%;
+}
+
+.descripcion-mapa-modal {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.modal-title {
+    font-size: 1rem;
+
+}
+
 
 /*CONTACTO*/
 
@@ -327,7 +385,6 @@ summary {
 .subtitulo_contacto {
     font-size: 2.5rem;
 }
-
 
 input,
 textarea {
@@ -343,6 +400,8 @@ label {
     height: 40rem;
 }
 
+
+
 @media screen and (max-width: 768px) {
 
     .titulo,
@@ -350,16 +409,25 @@ label {
     .titulo_norte,
     .titulo_centro,
     .titulo_sur {
-        font-size: 2.7rem;
+        font-size: 2.7rem !important;
     }
 
     .subtitulo,
     .subtitulo_contacto,
     .subtitulo_norte,
     .subtitulo_centro,
-    .subtitulo_sur {
+    .subtitulo_sur,
+    .subtitulo_mapa {
         font-size: 1.5rem;
         padding: 0 1rem !important;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0 !important;
+    }
+
+    .nav-link:hover::after {
+        opacity: 0;
     }
 
     .descripcion_index {
@@ -368,7 +436,9 @@ label {
     }
 
     .titulo_descubrir,
-    .titulo_mapa {
+    .titulo_mapa-index,
+    .titulo_provincias-mapa,
+    .recomendaciones-mapa-modal {
         font-size: 2.5rem !important;
     }
 
@@ -380,4 +450,35 @@ label {
         width: 100%;
         height: 15rem;
     }
+
+    .nombre-provincia {
+        font-size: 1.5rem !important;
+    }
+
+    .lugar_provincia_prueba {
+        height: 13rem;
+    }
+
+    .seccion_mapa,
+    .contenido-modal-mapa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_mapa,
+    .mapa-modal,
+    .txt-mapa-modal,
+    .provincias-mapa {
+        width: 100%;
+    }
+
+    .provincias-mapa {
+        margin-top: 2rem;
+    }
+
+    .titulo_mapa {
+        font-size: 4rem !important;
+    }
+
+
 }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -34,7 +35,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto lista_nav me-2">
                         <li class="nav-item"><a href="../index.html" class="nav-link fs-5 item_navbar">Inicio</a></li>
-                        <li class="nav-item"><a href="norte.html" class="nav-link fs-5 item_navbar">Norte</a></li>
+                        <li class="nav-item"><a href="norte.html" class="nav-link fs-5 item_navbar active">Norte</a>
+                        </li>
                         <li class="nav-item"><a href="centro.html" class="nav-link fs-5 item_navbar">Centro</a>
                         </li>
                         <li class="nav-item"><a href="sur.html" class="nav-link fs-5 item_navbar">Sur</a></li>
@@ -52,91 +54,318 @@
             </video>
 
             <div class="position-absolute w-100 top-50 start-50 translate-middle text-center ">
-                <h1 class="titulo_norte fw-bolder text-start ps-4 py-2">Norte Argentino</h1>
-                <h2 class="subtitulo_norte py-2 fw-medium fst-italic text-start ps-4">Dónde el cielo se inclina
+                <h1 class="titulo_norte fw-bolder text-start ps-4 py-2 animate__animated animate__fadeIn">Norte
+                    Argentino</h1>
+                <h2
+                    class="subtitulo_norte py-2 fw-medium fst-italic text-start ps-4 animate__animated  animate__fadeInLeft">
+                    Dónde el cielo se inclina
                 </h2>
             </div>
         </div>
         <section class="seccion_provincias">
-            <div class="provincia">
-                <details>
-                    <summary>Catamarca</summary>
-                    <div class="lugar_provincia">
-                        <h3 class="titulo_lugar">Campo de Piedra Pómez</h3>
-                        <img src="../assets/img/norte/catamarca/campo-piedra/pomez3.jpg" alt="" class="img_lugar">
+            <div class="provincia accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Catamarca
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                    <button type="button" class="btn btn-modal" data-bs-toggle="modal"
+                                        data-bs-target="#modalPomez">
+                                        Visitar
+                                    </button>
+
+                                    <div class="modal fade" id="modalPomez" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                                            <div class="modal-content ">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Campo de Piedra
+                                                        Pómez
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body p-0">
+                                                    <div id="carouselExample" class="carousel dimension-carrusel slide">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="../assets/img/norte/catamarca/campo-piedra/pomez1.jpg"
+                                                                    class="d-block w-100" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../assets/img/norte/catamarca/campo-piedra/pomez2.jpg"
+                                                                    class="d-block w-100" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../assets/img/norte/catamarca/campo-piedra/pomez3.jpg"
+                                                                    class="d-block w-100" alt="...">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="../assets/img/norte/catamarca/campo-piedra/pomez4.jpg"
+                                                                    class="d-block w-100" alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#carouselExample" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#carouselExample" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                    <p class="descripcion-modal">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing
+                                                        elit. Ipsam
+                                                        sit iusto quibusdam minima nesciunt delectus quasi id impedit,
+                                                        odio mollitia reprehenderit pariatur, perspiciatis incidunt
+                                                        natus quas doloremque sunt aliquid saepe?
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Tenetur totam numquam sunt voluptates eos cupiditate, at veniam
+                                                        optio dolorum ullam quidem ipsa porro adipisci ad voluptatibus
+                                                        provident impedit, placeat eum!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lugar_provincia">
-                        <h3 class="titulo_lugar">Fiambala</h3>
-                        <img src="../assets/img/norte/catamarca/fiambala/fiambala1.jpg" alt="" class="img_lugar">
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Chaco
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lugar_provincia">
-                        <h3 class="titulo_lugar">Ruta ds Seismiles</h3>
-                        <img src="../assets/img/norte/catamarca/ruta-6000/ruta4.webp" alt="" class="img_lugar">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            Corrientes
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lugar_provincia">
-                        <h3 class="titulo_lugar">Salar de Antofalla</h3>
-                        <img src="../assets/img/norte/catamarca/salar-antofalla/salarAnto1.jpg" alt=""
-                            class="img_lugar">
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            Formosa
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lugar_provincia">
-                        <h3 class="titulo_lugar">Volcán Galan</h3>
-                        <img src="../assets/img/norte/catamarca/volcan-galan/volcanG4.jpg" alt="" class="img_lugar">
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            Jujuy
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Chaco</summary>
-                    <p>Lugares de Chaco</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Corrientes</summary>
-                    <p>Lugares de Corrientes</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Formosa</summary>
-                    <p>Lugares de Formosa</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Jujuy</summary>
-                    <p>Lugares de Jujuy</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>La Rioja</summary>
-                    <p>Lugares de La Rioja</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Misiones</summary>
-                    <p>Lugares de Misiones</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Salta</summary>
-                    <p>Lugares de Salta</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Santiago del Estero</summary>
-                    <p>Lugares de Santiago del Estero</p>
-                </details>
-            </div>
-            <div class="provincia">
-                <details>
-                    <summary>Tucumán</summary>
-                    <p>Lugares de Tucumán</p>
-                </details>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            La Rioja
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            Misiones
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            Salta
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                            Santiago del Estero
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button nombre-provincia" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                            Tucumán
+                        </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-center d-flex flex-column align-items-center w-100">
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+
+                            <div class="lugar_provincia_prueba shadow rounded my-3 w-75 text-center">
+                                <div class="degrade w-100 shadow rounded text-center ">
+                                    <h3 class="titulo_lugar fw-bolder pt-5">Campo de Piedra Pómez</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
