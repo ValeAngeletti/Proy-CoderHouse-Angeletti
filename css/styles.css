@@ -1,484 +1,586 @@
-:root {
-    /*Colores Norte*/
-    --fondo-norte: #540804;
-    --texto-norte: #EA8C55;
-    --fondo-catamarca: #81171B;
-    --fondo-chaco: #94231e;
-    --fondo-corrientes: #a23020;
-    --fondo-formosa: #ad2e24;
-    --fondo-jujuy: #b8392c;
-    --fondo-la-rioja: #c75146;
-    --fondo-misiones: #d96a4e;
-    --fondo-salta: #e17a50;
-    --fondo-santiago-del-estero: #e88652;
-    --fondo-tucuman: #EA8C55;
-
-    /*Colores Centro*/
-    --fondo-centro: #3C4B22;
-    --texto-centro: #b8860b;
-    --fondo-bsas: #6b8e23;
-    --fondo-caba: #7a9527;
-    --fondo-cordoba: #889d2b;
-    --fondo-entre-rios: #9acd32;
-    --fondo-la-pampa: #adc43c;
-    --fondo-mendoza: #c2b946;
-    --fondo-san-juan: #daa520;
-    --fondo-san-luis: #c89516;
-    --fondo-santa-fe: #b8860b;
-
-    /*Colores Sur*/
-    --fondo-sur: #03045E;
-    --texto-sur: #caf0f8;
-    --fondo-chubut: #0077b6;
-    --fondo-neuquen: #3096cd;
-    --fondo-rio-negro: #00b4d8;
-    --fondo-santa-cruz: #90e0ef;
-    --fondo-tierra-del-fuego: #caf0f8;
-
-    /*Colores generales*/
-    --items-header: #c14d45;
-    --fondo-blanco: #f7f2e2;
-    --texto-naranja-fuerte: #b72e24;
-    --azul-oscuro-general: #041b30;
-    --color-logo: #bf1509;
-
-    /*Colores mapa*/
-    --identificador-norte: #972916;
-    --identificador-centro: #0f5618;
-    --identificador-sur: #0c1d75;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.txt_logo,
-.titulo,
-.subtitulo,
-.titulo_descubrir,
-.titulo_mapa-index,
-.titulo_contacto,
-.subtitulo_contacto,
-.titulo_norte,
-.subtitulo_norte,
-.titulo_centro,
-.subtitulo_centro,
-.titulo_sur,
-.subtitulo_sur,
-.recomendaciones-mapa-modal,
-.titulo_mapa,
-.subtitulo_mapa {
-    font-family: 'Playfair Display';
-}
-
-.item_navbar,
-.descripcion_index,
-.titulo_tarjetas,
-.descripcion_mapa,
-.btn_mapa,
-.btn_contacto,
-footer,
-.seccion_form_contacto,
-input,
-textarea,
-.titulo_provincias-mapa,
-.descripcion-mapa-modal,
-.modal-title {
-    font-family: 'Poppins';
-}
-
+/* --- HEADER ---*/
 header {
-    background-color: var(--azul-oscuro-general);
+  background-color: var(--azul-oscuro-general);
+}
+header .txt_logo {
+  color: var(--color-logo) !important;
+  font-family: var(--font-playfair);
+}
+header .txt_logo .logo {
+  width: 80px;
 }
 
-.logo {
-    width: 80px;
+/* --- NAVBAR ---*/
+.nav-link {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
-
-.txt_logo {
-
-    color: var(--color-logo) !important;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 8px;
+  background: radial-gradient(ellipse at center, rgba(241, 177, 177, 0.502) 0%, transparent 80%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
-
-.item_navbar,
-footer {
-    color: #c14d45 !important;
+.nav-link:hover {
+  transform: translateY(-3px);
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+  .nav-link:hover::after {
+    opacity: 0;
+  }
 }
 
 .nav-link.active {
-    color: var(--color-logo) !important;
-    border-bottom: 2px solid var(--color-logo);
+  color: var(--color-logo) !important;
+  border-bottom: 2px solid var(--color-logo) !important;
 }
 
 .item_navbar {
-    padding: 0 1rem !important;
-    transition: transform 0.3s !important;
+  color: #c14d45 !important;
+  padding: 0 1rem !important;
+  transition: transform 0.3s !important;
+  font-family: var(--font-poppins);
 }
-
-.nav-link {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s ease;
+@media screen and (max-width: 768px) {
+  .item_navbar {
+    padding: 0.5rem 0 !important;
+  }
 }
-
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 8px;
-    background: radial-gradient(ellipse at center, rgba(241, 177, 177, 0.502) 0%, transparent 80%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.nav-link:hover {
-    transform: translateY(-3px);
-}
-
-.nav-link:hover::after {
-    opacity: 1;
-}
-
-/**/
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23c14d45' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23c14d45' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
-.nombre-provincia {
-    font-size: 2rem !important;
-    padding: 1.5rem !important;
+/* --- INDEX ---*/
+.titulo {
+  color: var(--texto-naranja-fuerte) !important;
+  font-size: 6rem !important;
 }
 
-.btn-modal {
-    border: 2px solid white !important;
-    color: white !important;
-    padding: 0.2rem 2rem !important;
-    font-size: 1.5rem !important;
-}
-
-.descripcion-modal {
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-
-.dimension-carrusel {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-/* INDEX */
-
-.contenedor_video,
-.contenedor_descubrir,
-footer,
-.inicio_mapa,
-.seccion_mapa,
-.seccion_form_contacto {
-    background-color: #103c65;
-}
-
-.titulo,
-.titulo_mapa {
-    color: var(--texto-naranja-fuerte) !important;
-    font-size: 6rem !important;
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 2.5rem !important;
+  }
 }
 
 .subtitulo {
-    font-size: 3rem;
-    color: #c3392f;
+  color: var(--naranja-claro) !important;
+  font-size: 3rem !important;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo {
+    font-size: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
-.descripcion_index,
-.modal-header {
-    background-color: var(--fondo-blanco);
+.titulo_tarjetas {
+  font-family: var(--font-Poppins);
 }
 
 .titulo_descubrir {
-    color: var(--texto-naranja-fuerte);
-    font-size: 4rem;
+  color: var(--texto-naranja-fuerte) !important;
+  font-size: 4rem !important;
 }
-
-.carousel {
-    width: 20rem;
-    height: 30rem;
-}
-
-.titulo_tarjetas,
-.btn_mapa a,
-.btn_contacto,
-.seccion_form_contacto,
-.subtitulo_mapa,
-.titulo_provincias-mapa {
-    color: var(--fondo-blanco);
-}
-
-.img_tarjetas {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-}
-
-.contenedor_mapa,
-.inicio_contacto {
-    background-color: var(--fondo-blanco);
-}
-
-.descripcion_mapa,
-.inicio_contacto,
-.titulo_contacto,
-.subtitulo_contacto,
-.recomendaciones-mapa-modal,
-.modal-title,
-.titulo_mapa-index {
-    color: var(--azul-oscuro-general);
-}
-
-.btn_mapa,
-.btn_contacto,
-footer {
-    background-color: var(--azul-oscuro-general);
+@media screen and (max-width: 768px) {
+  .titulo_descubrir {
+    font-size: 2.5rem !important;
+  }
 }
 
 .titulo_mapa-index {
-    font-size: 4rem;
+  font-size: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .titulo_mapa-index {
+    font-size: 2.5rem !important;
+  }
 }
 
-/*NORTE*/
-
-.videos_banners {
-    pointer-events: none;
-}
-
+/* --- NORTE ---*/
 .titulo_norte {
-    color: var(--texto-norte);
-    font-size: 6rem;
+  color: var(--texto-norte) !important;
+  font-size: 6rem !important;
+}
+@media screen and (max-width: 768px) {
+  .titulo_norte {
+    font-size: 2.5rem !important;
+  }
 }
 
 .subtitulo_norte {
-    color: var(--texto-norte);
-    font-size: 3rem;
+  color: var(--texto-norte) !important;
+  font-size: 3.5rem !important;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo_norte {
+    font-size: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
-.provincia {
-    width: 100%;
+.catamarca-fondo {
+  background-color: #81171B !important;
 }
 
-.titulo_lugar {
-    font-family: 'Poppins';
-    color: var(--texto-norte);
-    font-weight: 400;
-    padding: 10px 0;
+.chaco-fondo {
+  background-color: #94231e !important;
 }
 
-
-.lugar_provincia_prueba {
-    background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
-    height: 10rem;
-    background-size: cover;
+.corrientes-fondo {
+  background-color: #a23020 !important;
 }
 
-.degrade {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    height: 100%;
+.formosa-fondo {
+  background-color: #ad2e24 !important;
 }
 
-.carousel-item {
-    height: 400px;
+.jujuy-fondo {
+  background-color: #b8392c !important;
 }
 
-.carousel-item img {
-    height: 100%;
-    object-fit: cover;
+.la-rioja-fondo {
+  background-color: #c75146 !important;
 }
 
-/*CENTRO*/
+.misiones-fondo {
+  background-color: #d96a4e !important;
+}
 
+.salta-fondo {
+  background-color: #e17a50 !important;
+}
+
+.santiago-del-estero-fondo {
+  background-color: #e88652 !important;
+}
+
+.tucuman-fondo {
+  background-color: #EA8C55 !important;
+}
+
+/* --- CENTRO ---*/
 .titulo_centro {
-    color: var(--texto-centro);
-    font-size: 6rem;
+  color: var(--texto-centro) !important;
+  font-size: 6rem !important;
+}
+@media screen and (max-width: 768px) {
+  .titulo_centro {
+    font-size: 2.5rem !important;
+  }
 }
 
 .subtitulo_centro {
-    color: var(--texto-centro);
-    font-size: 4rem;
+  color: var(--texto-centro) !important;
+  font-size: 3.5rem !important;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo_centro {
+    font-size: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
-/*SUR*/
+.bsas-fondo {
+  background-color: #6b8e23 !important;
+}
 
+.caba-fondo {
+  background-color: #7a9527 !important;
+}
+
+.cordoba-fondo {
+  background-color: #889d2b !important;
+}
+
+.entre-rios-fondo {
+  background-color: #9acd32 !important;
+}
+
+.la-pampa-fondo {
+  background-color: #adc43c !important;
+}
+
+.mendoza-fondo {
+  background-color: #c2b946 !important;
+}
+
+.san-juan-fondo {
+  background-color: #daa520 !important;
+}
+
+.san-luis-fondo {
+  background-color: #c89516 !important;
+}
+
+.santa-fe-fondo {
+  background-color: #b8860b !important;
+}
+
+/* --- SUR ---*/
 .titulo_sur {
-    color: var(--texto-sur);
-    font-size: 6rem;
-
+  color: var(--texto-sur) !important;
+  font-size: 6rem !important;
+}
+@media screen and (max-width: 768px) {
+  .titulo_sur {
+    font-size: 2.5rem !important;
+  }
 }
 
 .subtitulo_sur {
-    color: var(--texto-sur);
-    font-size: 4rem;
-
+  color: var(--texto-sur) !important;
+  font-size: 3.5rem !important;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo_sur {
+    font-size: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
-/*MAPA*/
-.titulo_mapa,
-.titulo_mapa-index {
-    padding-top: 1rem;
-    text-align: center;
+.chubut-fondo {
+  background-color: #0077b6 !important;
+}
+
+.neuquen-fondo {
+  background-color: #3096cd !important;
+}
+
+.rio-negro-fondo {
+  background-color: #00b4d8 !important;
+}
+
+.santa-cruz-fondo {
+  background-color: #90e0ef !important;
+}
+
+.tierra-del-fuego-fondo {
+  background-color: #caf0f8 !important;
+}
+
+/* --- MAPA ---*/
+.titulo_provincias-mapa, .subtitulo_mapa, .titulo_mapa {
+  text-align: center;
+}
+
+.titulo_mapa {
+  color: var(--texto-naranja-fuerte) !important;
+  font-size: 6rem !important;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .titulo_mapa {
+    font-size: 4rem !important;
+  }
 }
 
 .subtitulo_mapa {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo_mapa {
+    font-size: 1.5rem !important;
+    padding: 1rem 1rem !important;
+  }
+}
+
+.titulo_provincias-mapa {
+  font-size: 3rem !important;
+  padding: 1.5rem 1.5rem !important;
+}
+@media screen and (max-width: 768px) {
+  .titulo_provincias-mapa {
+    font-size: 2.5rem !important;
+  }
 }
 
 .seccion_mapa {
-    padding: 20px;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  .seccion_mapa {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .img_mapa,
 .provincias-mapa {
-    width: 50%;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .img_mapa,
+  .provincias-mapa {
+    width: 100%;
+  }
 }
 
-.titulo_provincias-mapa,
-.recomendaciones-mapa-modal {
-    font-size: 3rem;
-    text-align: center;
-    padding: 1.5rem;
+@media screen and (max-width: 768px) {
+  .provincias-mapa {
+    margin-top: 2rem;
+  }
 }
 
-.contenido-modal-mapa {
-    display: flex;
-}
-
-.mapa-modal {
-    width: 50%;
-    height: 30rem;
-}
-
-.txt-mapa-modal {
-    width: 50%;
-}
-
-.descripcion-mapa-modal {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-}
-
-.modal-title {
-    font-size: 1rem;
-
-}
-
-
-/*CONTACTO*/
-
+/* --- CONTACTO ---*/
 .titulo_contacto {
-    font-size: 5rem;
+  font-size: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .titulo_contacto {
+    font-size: 2.5rem !important;
+  }
 }
 
 .subtitulo_contacto {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .subtitulo_contacto {
+    font-size: 1.5rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
-input,
-textarea {
-    border: none;
+@media screen and (max-width: 768px) {
+  .seccion_form_contacto {
+    padding: 1rem !important;
+  }
+}
+
+input, textarea {
+  font-family: var(--font-Poppins);
+  border: none;
 }
 
 label {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* --- FOOTER ---*/
+footer {
+  font-family: var(--font-poppins);
+  color: #c14d45 !important;
+  background-color: var(--azul-oscuro-general);
+}
+
+/* --- ACORDIONES ---*/
+.provincia {
+  width: 100%;
+}
+
+/* --- Contenido Acordiones --- */
+.titulo_lugar {
+  font-family: var(--font-Poppins);
+  color: var(--texto-norte);
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .nombre-provincia {
+    font-size: 1.5rem !important;
+  }
+}
+
+.lugar_provincia_prueba {
+  background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
+  height: 10rem;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .lugar_provincia_prueba {
+    height: 13rem;
+  }
+}
+
+.degrade {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
+}
+
+/* --- MODAL ---*/
+.btn-modal {
+  border: 2px solid white !important;
+  color: white !important;
+  font-size: 1.5rem !important;
+  padding: 0.2rem 3rem !important;
+}
+
+.modal-header {
+  background-color: var(--fondo-blanco);
+}
+.modal-header .modal-title {
+  color: var(--azul-oscuro-general) !important;
+  font-size: 1rem !important;
+  font-family: var(--font-Poppins);
+}
+
+.contenido-modal-mapa {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .contenido-modal-mapa {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contenido-modal-mapa .mapa-modal {
+  width: 50%;
+  height: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .contenido-modal-mapa .mapa-modal {
+    width: 100%;
+    height: auto;
+  }
+}
+.contenido-modal-mapa .txt-mapa-modal {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .contenido-modal-mapa .txt-mapa-modal {
+    width: var(--ancho-100);
+  }
+}
+.contenido-modal-mapa .txt-mapa-modal .recomendaciones-mapa-modal {
+  font-family: var(--font-Playfair);
+  color: var(--azul-oscuro-general);
+  font-size: 3rem !important;
+  padding: 1.5rem 1.5rem !important;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .contenido-modal-mapa .txt-mapa-modal .recomendaciones-mapa-modal {
+    font-size: 2.5rem !important;
+  }
+}
+.contenido-modal-mapa .txt-mapa-modal .descripcion-mapa-modal {
+  font-family: var(--font-Poppins);
+  font-size: 1.5rem !important;
+  padding: 1rem 2rem !important;
+}
+
+.descripcion-modal {
+  font-size: 1.5rem !important;
+  padding: 1rem 1rem !important;
+}
+
+/* --- CARRUSEL ---*/
+.dimension-carrusel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-item {
+  height: 400px;
+}
+.carousel .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-index {
+  width: 20rem;
+  height: 30rem;
+}
+
+.img_terjetas {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
 }
 
 .carrusel_contcato {
-    width: 38rem;
-    height: 40rem;
+  width: 38rem;
+  height: 40rem;
 }
-
-
-
 @media screen and (max-width: 768px) {
-
-    .titulo,
-    .titulo_contacto,
-    .titulo_norte,
-    .titulo_centro,
-    .titulo_sur {
-        font-size: 2.7rem !important;
-    }
-
-    .subtitulo,
-    .subtitulo_contacto,
-    .subtitulo_norte,
-    .subtitulo_centro,
-    .subtitulo_sur,
-    .subtitulo_mapa {
-        font-size: 1.5rem;
-        padding: 0 1rem !important;
-    }
-
-    .nav-link {
-        padding: 0.5rem 0 !important;
-    }
-
-    .nav-link:hover::after {
-        opacity: 0;
-    }
-
-    .descripcion_index {
-        font-size: 0.5rem !important;
-        padding: 0.5rem !important;
-    }
-
-    .titulo_descubrir,
-    .titulo_mapa-index,
-    .titulo_provincias-mapa,
-    .recomendaciones-mapa-modal {
-        font-size: 2.5rem !important;
-    }
-
-    .seccion_form_contacto {
-        padding: 1rem !important;
-    }
-
-    .carrusel_contcato {
-        width: 100%;
-        height: 15rem;
-    }
-
-    .nombre-provincia {
-        font-size: 1.5rem !important;
-    }
-
-    .lugar_provincia_prueba {
-        height: 13rem;
-    }
-
-    .seccion_mapa,
-    .contenido-modal-mapa {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img_mapa,
-    .mapa-modal,
-    .txt-mapa-modal,
-    .provincias-mapa {
-        width: 100%;
-    }
-
-    .provincias-mapa {
-        margin-top: 2rem;
-    }
-
-    .titulo_mapa {
-        font-size: 4rem !important;
-    }
-
-
+  .carrusel_contcato {
+    width: 100%;
+    height: 15rem;
+  }
 }
+
+:root {
+  /*Norte*/
+  --fondo-norte: #540804;
+  --texto-norte: #EA8C55;
+  /*Centro*/
+  --texto-centro: #b8860b;
+  --fondo-centro: #3C4B22;
+  /*Sur*/
+  --fondo-sur: #03045E;
+  --texto-sur: #caf0f8;
+  /*Colores generales*/
+  --items-header: #c14d45;
+  --fondo-blanco: #f7f2e2;
+  --naranja-claro: #c3392f;
+  --texto-naranja-fuerte: #b72e24;
+  --azul-oscuro-general: #041b30;
+  --color-logo: #bf1509;
+  --azul-oscuro-secundario: #103c65;
+  /*Fonts*/
+  --font-poppins: "Poppins";
+  --font-playfair: "Playfair Display";
+  --ancho-100: 100%;
+}
+
+.font-Playfair {
+  font-family: var(--font-playfair);
+}
+
+.font-Poppins {
+  font-family: var(--font-poppins);
+}
+
+.fondo-azul-oscuro {
+  background-color: var(--azul-oscuro-general) !important;
+}
+
+.fondo-azul-secundario {
+  background-color: var(--azul-oscuro-secundario) !important;
+}
+
+.fondo-blanco {
+  background-color: var(--fondo-blanco);
+}
+
+.texto-blanco {
+  color: var(--fondo-blanco);
+}
+
+.texto-azul-oscuro {
+  color: var(--azul-oscuro-general);
+}
+
+.ancho-100 {
+  width: 100%;
+}
+
+.nombre-provincia {
+  font-size: 2rem !important;
+  padding: 1.5rem 1.5rem !important;
+}
+
+.videos_banners {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

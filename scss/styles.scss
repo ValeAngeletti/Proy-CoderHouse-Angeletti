@@ -1,0 +1,113 @@
+@use 'partials/globals' as *;
+
+/* --- HEADER ---*/
+@use "partials/header";
+
+/* --- NAVBAR ---*/
+@use "partials/navBar";
+
+/* --- INDEX ---*/
+@use "partials/index";
+
+/* --- NORTE ---*/
+@use "partials/norte";
+@use "partials/mapNorte";
+
+
+/* --- CENTRO ---*/
+@use "partials/centro";
+@use "partials/mapCentro";
+
+/* --- SUR ---*/
+@use "partials/sur";
+@use "partials/mapSur";
+
+/* --- MAPA ---*/
+@use "partials/mapa";
+
+/* --- CONTACTO ---*/
+@use "partials/contacto";
+
+/* --- FOOTER ---*/
+@use "partials/footer";
+
+/* --- ACORDIONES ---*/
+@use "partials/acordiones";
+
+/* --- MODAL ---*/
+@use "partials/modales";
+
+/* --- CARRUSEL ---*/
+@use "partials/carrusel";
+
+
+:root {
+
+    /*Norte*/
+    --fondo-norte: #540804;
+    --texto-norte: #EA8C55;
+
+    /*Centro*/
+    --texto-centro: #b8860b;
+    --fondo-centro: #3C4B22;
+    
+    /*Sur*/
+    --fondo-sur: #03045E;
+    --texto-sur: #caf0f8;
+
+    /*Colores generales*/
+    --items-header: #c14d45;
+    --fondo-blanco: #f7f2e2;
+    --naranja-claro: #c3392f;
+    --texto-naranja-fuerte: #b72e24;
+    --azul-oscuro-general: #041b30;
+    --color-logo: #bf1509;
+    --azul-oscuro-secundario: #103c65;
+
+    /*Fonts*/
+    --font-poppins: 'Poppins';
+    --font-playfair: 'Playfair Display';
+
+    --ancho-100: 100%;
+
+}
+
+.font-Playfair{
+    font-family: var(--font-playfair);
+}
+
+.font-Poppins{
+    font-family: var(--font-poppins);
+}
+
+.fondo-azul-oscuro{
+    background-color: var(--azul-oscuro-general) !important;
+}
+
+.fondo-azul-secundario{
+    background-color: var(--azul-oscuro-secundario) !important;
+}
+
+.fondo-blanco{
+    background-color: var(--fondo-blanco);
+}
+
+.texto-blanco{
+    color: var(--fondo-blanco);
+}
+
+.texto-azul-oscuro{
+    color: var(--azul-oscuro-general);
+}
+
+.ancho-100{
+    width: 100%;
+}
+
+.nombre-provincia {
+    @include font-padding(2rem, 1.5rem, 1.5rem);
+}
+
+.videos_banners {
+    pointer-events: none;
+}

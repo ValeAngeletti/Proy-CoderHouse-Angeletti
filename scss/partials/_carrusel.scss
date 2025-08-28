@@ -1,0 +1,35 @@
+@use "mixins";
+
+.dimension-carrusel{
+    @include mixins.ancho-alto(100%, 100%);
+}
+
+.carousel{
+
+    .carousel-item {
+        height: 400px;
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel-index{
+    @include mixins.ancho-alto(20rem, 30rem);
+
+}
+
+.img_terjetas{
+    @include mixins.ancho-alto(300px, auto);
+    object-fit: cover;
+}
+
+.carrusel_contcato {
+    @include mixins.ancho-alto(38rem, 40rem);
+
+    @media screen and (max-width: 768px){
+        @include mixins.ancho-alto(100%, 15rem);
+    }
+}

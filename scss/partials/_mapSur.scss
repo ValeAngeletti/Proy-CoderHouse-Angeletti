@@ -1,0 +1,13 @@
+$fondos-sur-map: (
+    "chubut": #0077b6,
+    "neuquen": #3096cd,
+    "rio-negro": #00b4d8,
+    "santa-cruz": #90e0ef,
+    "tierra-del-fuego": #caf0f8
+);
+
+@each $name, $color in $fondos-sur-map {
+    .#{$name}-fondo {
+        background-color: $color !important;
+    }
+}

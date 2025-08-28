@@ -1,0 +1,67 @@
+@use "mixins";
+
+.btn-modal{
+    border: 2px solid white !important;
+    color: white !important;
+    @include mixins.font-padding(1.5rem, 0.2rem, 3rem);
+}
+
+.modal-header {
+    background-color: var(--fondo-blanco);
+
+    .modal-title{
+        @include mixins.titulos-paginas (var(--azul-oscuro-general), 1rem);
+        font-family: var(--font-Poppins);
+
+    }
+}
+
+.contenido-modal-mapa {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa-modal{
+        @include mixins.ancho-alto (50%, 30rem);
+
+
+        @media screen and (max-width: 768px) {
+            @include mixins.ancho-alto (100%, auto);
+
+        }
+    }
+
+    .txt-mapa-modal{
+        width: 50%;
+
+        @media screen and (max-width: 768px) {
+            width: var(--ancho-100);
+        }
+
+        .recomendaciones-mapa-modal{
+            font-family: var(--font-Playfair);
+            color: var(--azul-oscuro-general);
+            @include mixins.font-padding(3rem, 1.5rem, 1.5rem);
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                @include mixins.titulos-paginas-responsve ();
+                
+            }
+        }
+
+        .descripcion-mapa-modal{
+            font-family: var(--font-Poppins);
+            @include mixins.font-padding(1.5rem, 1rem, 2rem);
+
+        }
+    }
+
+}
+
+.descripcion-modal {
+    @include mixins.font-padding(1.5rem, 1rem, 1rem);
+}

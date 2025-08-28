@@ -1,0 +1,17 @@
+@use "mixins";
+
+.titulo_centro{
+    @include mixins.titulos-paginas (var(--texto-centro), 6rem);
+
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}
+
+.subtitulo_centro{
+    @include mixins.titulos-paginas (var(--texto-centro), 3.5rem);
+
+    @media screen and (max-width: 768px){
+        @include mixins.subtitulos-paginas-responsve();
+    }
+}

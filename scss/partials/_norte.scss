@@ -1,0 +1,17 @@
+@use "mixins";
+
+.titulo_norte{
+    @include mixins.titulos-paginas (var(--texto-norte), 6rem);
+
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}
+
+.subtitulo_norte{
+    @include mixins.titulos-paginas (var(--texto-norte), 3.5rem);
+
+    @media screen and (max-width: 768px){
+        @include mixins.subtitulos-paginas-responsve();
+    }
+}

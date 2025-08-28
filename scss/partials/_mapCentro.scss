@@ -1,0 +1,17 @@
+$fondos-centro-map: (
+    "bsas": #6b8e23,
+    "caba": #7a9527,
+    "cordoba": #889d2b,
+    "entre-rios": #9acd32,
+    "la-pampa": #adc43c,
+    "mendoza": #c2b946,
+    "san-juan": #daa520,
+    "san-luis": #c89516,
+    "santa-fe": #b8860b
+);
+
+@each $name, $color in $fondos-centro-map {
+    .#{$name}-fondo {
+        background-color: $color !important;
+    }
+}

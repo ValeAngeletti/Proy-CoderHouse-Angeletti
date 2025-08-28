@@ -1,0 +1,41 @@
+@use "mixins";
+
+%titulos_index{
+    @include mixins.titulos-paginas (var(--texto-naranja-fuerte), 6rem);
+}
+
+.titulo{
+    @extend %titulos_index;
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}
+
+
+
+.subtitulo{
+    @include mixins.titulos-paginas (var(--naranja-claro), 3rem);
+    @media screen and (max-width: 768px){
+        @include mixins.subtitulos-paginas-responsve();
+    }
+}
+
+.titulo_tarjetas{
+    font-family: var(--font-Poppins)
+}
+
+.titulo_descubrir{
+    @include mixins.titulos-paginas (var(--texto-naranja-fuerte), 4rem);
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}
+
+.titulo_mapa-index{
+    font-size: 4rem;
+    padding-top: 1rem;
+    text-align: center;
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}

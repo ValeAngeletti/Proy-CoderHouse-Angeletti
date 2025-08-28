@@ -1,0 +1,18 @@
+$fondos-norte-map: (
+    "catamarca": #81171B,
+    "chaco": #94231e,
+    "corrientes": #a23020,
+    "formosa": #ad2e24,
+    "jujuy": #b8392c,
+    "la-rioja": #c75146,
+    "misiones": #d96a4e,
+    "salta": #e17a50,
+    "santiago-del-estero": #e88652,
+    "tucuman": #EA8C55
+);
+
+@each $name, $color in $fondos-norte-map {
+    .#{$name}-fondo {
+        background-color: $color !important;
+    }
+}

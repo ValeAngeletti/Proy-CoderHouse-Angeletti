@@ -1,0 +1,59 @@
+@use "mixins";
+
+%texto-centro{
+    text-align: center;
+}
+
+.titulo_mapa{
+    @include mixins.titulos-paginas (var(--texto-naranja-fuerte), 6rem);
+    padding-top: 1rem;
+    @extend %texto-centro;
+
+    @media screen and (max-width: 768px){
+        font-size: 4rem !important;
+    }
+}
+
+.subtitulo_mapa {
+    font-size: 2rem;
+    @extend %texto-centro;
+
+    @media screen and (max-width: 768px){
+        @include mixins.font-padding(1.5rem, 1rem, 1rem);
+    }
+
+}
+
+.titulo_provincias-mapa{
+    @include mixins.font-padding(3rem, 1.5rem, 1.5rem);
+    @extend %texto-centro;
+
+    @media screen and (max-width: 768px){
+        @include mixins.titulos-paginas-responsve();
+    }
+}
+
+.seccion_mapa {
+    padding: 20px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.img_mapa,
+.provincias-mapa {
+    width: 50%;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+}
+
+.provincias-mapa {
+
+    @media screen and (max-width: 768px){
+        margin-top: 2rem;
+    }
+}
