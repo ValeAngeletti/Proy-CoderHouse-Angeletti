@@ -9,5 +9,6 @@ $fondos-sur-map: (
 @each $name, $color in $fondos-sur-map {
     .#{$name}-fondo {
         background-color: $color !important;
+        color: rgb(18, 17, 17) !important;
     }
 }

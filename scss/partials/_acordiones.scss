@@ -6,9 +6,15 @@
 /* --- Contenido Acordiones --- */
 .titulo_lugar {
     font-family: var(--font-Poppins);
-    color: var(--texto-norte);
-    font-weight: 400;
-    padding: 10px 0;
+    color: rgb(244, 208, 184);
+    font-weight: 300;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 2rem !important;
+        padding: 1rem;
+    }
 }
 
 .nombre-provincia{
@@ -21,15 +27,16 @@
 
 .lugar_provincia_prueba {
     background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
-    height: 10rem;
+    height: 13rem;
     background-size: cover;
 
     @media screen and (max-width: 768px){
-        height: 13rem;
+        height: 15rem;
+        
     }
 }
 
 .degrade {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to right , #54080499, #ea8c5584);
     height: 100%;
 }

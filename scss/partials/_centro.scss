@@ -1,5 +1,9 @@
 @use "mixins";
 
+.video-centro{
+    background-color: var(--fondo-centro);
+}
+
 .titulo_centro{
     @include mixins.titulos-paginas (var(--texto-centro), 6rem);
 
@@ -13,5 +17,140 @@
 
     @media screen and (max-width: 768px){
         @include mixins.subtitulos-paginas-responsve();
+    }
+}
+
+/* --- BSAS ---*/
+$fondos-bsas: (
+    "cifuentes": url("../../assets/img/centro/buenos-aires/cascada-cifuentes/cifuentes1.png"),
+    "delta": url("../../assets/img/centro/buenos-aires/delta-tigre/delta-tigre1.jpeg"),
+    "lobos": url("../../assets/img/centro/buenos-aires/laguna-lobos/laguna-lobos1.jpg"),
+    "otamendi": url("../../assets/img/centro/buenos-aires/reserva-otamendi/reserva-otamendi1.jpg"),
+    "ventana": url("../../assets/img/centro/buenos-aires/sierra-ventana/sierra-ventana1.jpg")
+);
+
+@each $name, $url in $fondos-bsas {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- CABA ---*/
+$fondos-caba: (
+    "rosada": url("../../assets/img/centro/caba/casa-rosada/casa-rosada1.jpg"),
+    "japones": url("../../assets/img/centro/caba/jardin-japones/jardin-japones1.jpg"),
+    "obelisco": url("../../assets/img/centro/caba/obelisco/obelisco1.jpg"),
+    "madero": url("../../assets/img/centro/caba/puerto-madero/puerto-medero1.jpg"),
+    "reservaCostanera": url("../../assets/img/centro/caba/reserva-costanera/reserva-costa1.jpg")
+);
+
+@each $name, $url in $fondos-caba {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Cordoba ---*/
+$fondos-cordoba: (
+    "ansenuza": url("../../assets/img/centro/cordoba/ansenuza/ansenuza1.jpg"),
+    "calamuchita": url("../../assets/img/centro/cordoba/calamuchita/calamuchita1.jpg"),
+    "gigantes": url("../../assets/img/centro/cordoba/los-gigantes/gigantes1.jpg"),
+    "condorito": url("../../assets/img/centro/cordoba/quebrada-condorito/condorito1.jpg"),
+    "uritorco": url("../../assets/img/centro/cordoba/uritorco/uritorco1.jpg")
+);
+
+@each $name, $url in $fondos-cordoba {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Entre Rios ---*/
+$fondos-entre-rios: (
+    "gualeguaychu": url("../../assets/img/centro/entre-rios/costa-gualeguaychu/gualeguaychu1.jpg"),
+    "elPalmar": url("../../assets/img/centro/entre-rios/el-palmar/palmar1.jpg"),
+    "islaPuerto": url("../../assets/img/centro/entre-rios/isla-puerto/isla-puerto1.jpg"),
+    "victoria": url("../../assets/img/centro/entre-rios/puente-victoria/victoria1.jpg"),
+    "federacion": url("../../assets/img/centro/entre-rios/termas-federacion/federacion1.jpg")
+);
+
+@each $name, $url in $fondos-entre-rios {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- La pampa ---*/
+$fondos-la-pampa: (
+    "tomas": url("../../assets/img/centro/la-pampa/laguna-don-tomas/laguna-don-tomas1.jpg"),
+    "ultracan": url("../../assets/img/centro/la-pampa/laguna-ultracan/laguna-ultracan1.png"),
+    "lihue": url("../../assets/img/centro/la-pampa/parque-lihue-calel/parque-lihuel1.jpg"),
+    "luro": url("../../assets/img/centro/la-pampa/parque-luro/parque-luro1.jpg"),
+    "salinasPampa": url("../../assets/img/centro/la-pampa/salinas-pampeanas/salinas-pampa.jpg")
+);
+
+@each $name, $url in $fondos-la-pampa {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Mendoza ---*/
+$fondos-mendoza: (
+    "aconcagua": url("../../assets/img/centro/mendoza/aconcagua/aconcagua1.jpg"),
+    "atuel": url("../../assets/img/centro/mendoza/canon-atuel/canon-atuel1.jpg"),
+    "laguna-diamante": url("../../assets/img/centro/mendoza/laguna-diamante/lag-diamante1.jpg"),
+    "parque-san-martin": url("../../assets/img/centro/mendoza/parque-san-martin/parque-san-martin1.jpg"),
+    "potrerillos": url("../../assets/img/centro/mendoza/potrerillos/potrerillos1.jpg")
+);
+
+@each $name, $url in $fondos-mendoza {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- San Juan ---*/
+$fondos-san-juan: (
+    "calingasta": url("../../assets/img/centro/san-juan/calingasta/caligasta1.jpg"),
+    "ansilta": url("../../assets/img/centro/san-juan/cordillera-ansilta/cordillera-ansilta1.jpg"),
+    "caracoles": url("../../assets/img/centro/san-juan/embalse-caracoles/embalse-caracoles1.jpg"),
+    "ullum": url("../../assets/img/centro/san-juan/embalse-ullum/embalse-ullum1.jpeg"),
+    "luna": url("../../assets/img/centro/san-juan/valle-luna/valle-luna1.jpg")
+);
+
+@each $name, $url in $fondos-san-juan {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- San Luis ---*/
+$fondos-san-luis: (
+    "florida": url("../../assets/img/centro/san-luis/dique-florida/dique-florida1.jpg"),
+    "merlo": url("../../assets/img/centro/san-luis/merlo/merlo1.jpg"),
+    "potrero": url("../../assets/img/centro/san-luis/potrero-funes/potrero-funes1.jpg"),
+    "moneda": url("../../assets/img/centro/san-luis/salto-de-la-moneda/salto-de-la-moneda1.jpg"),
+    "quijadas": url("../../assets/img/centro/san-luis/sierra-de-las-quijadas/la-quijada1.jpg")
+);
+
+@each $name, $url in $fondos-san-luis {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Santa Fe ---*/
+$fondos-santa-fe: (
+    "balnearioFlorida": url("../../assets/img/centro/santa-fe/balneario-la-florida/balne1.jpg"),
+    "monumento": url("../../assets/img/centro/santa-fe/monumento-bandera/bandera1.webp"),
+    "independencia": url("../../assets/img/centro/santa-fe/parque-independencia/parque-independencia1.webp"),
+    "garay": url("../../assets/img/centro/santa-fe/parque-juan-garay/garay1.jpg"),
+    "urquiza": url("../../assets/img/centro/santa-fe/parque-urquiza/urquiza1.jpg")
+);
+
+@each $name, $url in $fondos-santa-fe {
+    .#{$name}-fondo {
+        background-image: $url !important;
     }
 }

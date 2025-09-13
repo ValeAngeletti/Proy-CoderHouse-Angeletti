@@ -1,7 +1,7 @@
 $fondos-centro-map: (
     "bsas": #6b8e23,
-    "caba": #7a9527,
-    "cordoba": #889d2b,
+    "caba": #82a02a,
+    "cordoba": #95ab31,
     "entre-rios": #9acd32,
     "la-pampa": #adc43c,
     "mendoza": #c2b946,
@@ -13,5 +13,6 @@ $fondos-centro-map: (
 @each $name, $color in $fondos-centro-map {
     .#{$name}-fondo {
         background-color: $color !important;
+        color: rgb(18, 17, 17) !important;
     }
 }

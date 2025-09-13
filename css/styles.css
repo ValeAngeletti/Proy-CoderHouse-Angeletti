@@ -114,6 +114,10 @@ header .txt_logo .logo {
 }
 
 /* --- NORTE ---*/
+.video-norte {
+  background-color: var(--fondo-norte);
+}
+
 .titulo_norte {
   color: var(--texto-norte) !important;
   font-size: 6rem !important;
@@ -135,47 +139,271 @@ header .txt_logo .logo {
   }
 }
 
+/* --- Catamarca ---*/
+.piedra-fondo {
+  background-image: url("../../assets/img/norte/catamarca/campo-piedra/pomez1.jpg") !important;
+}
+
+.fiambala-fondo {
+  background-image: url("../../assets/img/norte/catamarca/fiambala/fiambala1.jpg") !important;
+}
+
+.rutaseis-fondo {
+  background-image: url("../../assets/img/norte/catamarca/ruta-6000/ruta1.jpg") !important;
+}
+
+.antofalla-fondo {
+  background-image: url("../../assets/img/norte/catamarca/salar-antofalla/salarAnto1.jpg") !important;
+}
+
+.galan-fondo {
+  background-image: url("../../assets/img/norte/catamarca/volcan-galan/volcanG1.jpg") !important;
+}
+
+/* --- Chaco ---*/
+.cerrito-fondo {
+  background-image: url("../../assets/img/norte/chaco/isla-cerrito/isla-cerrito1.webp") !important;
+}
+
+.palmar-fondo {
+  background-image: url("../../assets/img/norte/chaco/laguna-palmar/laguna-palmar3.jpg") !important;
+}
+
+.parChaco-fondo {
+  background-image: url("../../assets/img/norte/chaco/parque-chaco/parqueChaco1.jpg") !important;
+}
+
+.impenetrable-fondo {
+  background-image: url("../../assets/img/norte/chaco/parque-impenetrable/impenetrable1.jpg") !important;
+}
+
+.bermejo-fondo {
+  background-image: url("../../assets/img/norte/chaco/rio-bermejo/bermejo1.jpg") !important;
+}
+
+/* --- Corrientes ---*/
+.costaUru-fondo {
+  background-image: url("../../assets/img/norte/corrientes/costa-uruguay/costa.jpg") !important;
+}
+
+.empedrado-fondo {
+  background-image: url("../../assets/img/norte/corrientes/empedrado/empedrado1.jpg") !important;
+}
+
+.esteros-fondo {
+  background-image: url("../../assets/img/norte/corrientes/esteros-ibera/esteros1.webp") !important;
+}
+
+.mburucuya-fondo {
+  background-image: url("../../assets/img/norte/corrientes/mburucuya/mburucuya1.jpg") !important;
+}
+
+.parana-fondo {
+  background-image: url("../../assets/img/norte/corrientes/rio-parana/parana1.jpg") !important;
+}
+
+/* --- Formosa ---*/
+.banado-fondo {
+  background-image: url("../../assets/img/norte/formosa/banado-estrella/banado1.jpg") !important;
+}
+
+.lagunaBlanca-fondo {
+  background-image: url("../../assets/img/norte/formosa/laguna-blanca/lagunaBlanca1.jpg") !important;
+}
+
+.lagunaOca-fondo {
+  background-image: url("../../assets/img/norte/formosa/laguna-oca/laguna1.jpg") !important;
+}
+
+.parqPilco-fondo {
+  background-image: url("../../assets/img/norte/formosa/parque-pilcomayo/parquePilco1.jpg") !important;
+}
+
+.rioPilco-fondo {
+  background-image: url("../../assets/img/norte/formosa/rio-pilcomayo/rioPilco1.jpg") !important;
+}
+
+/* --- Jujuy ---*/
+.pozuelos-fondo {
+  background-image: url("../../assets/img/norte/jujuy/pozuelos/pozuelos1.jpg") !important;
+}
+
+.purma-fondo {
+  background-image: url("../../assets/img/norte/jujuy/purmamarca/purma1.jpg") !important;
+}
+
+.quebrada-fondo {
+  background-image: url("../../assets/img/norte/jujuy/quebrada/quebrada1.jpg") !important;
+}
+
+.salinasJu-fondo {
+  background-image: url("../../assets/img/norte/jujuy/salinas/salinas1.png") !important;
+}
+
+.serrania-fondo {
+  background-image: url("../../assets/img/norte/jujuy/serrania/serrania1.jpg") !important;
+}
+
+/* --- La Rioja ---*/
+.anchumbil-fondo {
+  background-image: url("../../assets/img/norte/la-rioja/canon-anchumbil/canon1.jpg") !important;
+}
+
+.miranda-fondo {
+  background-image: url("../../assets/img/norte/la-rioja/cuesta-miranda/miranda1.jpg") !important;
+}
+
+.famatina-fondo {
+  background-image: url("../../assets/img/norte/la-rioja/famatina/famatina1.jpg") !important;
+}
+
+.lagBrava-fondo {
+  background-image: url("../../assets/img/norte/la-rioja/laguna-brava/lagunaBrava1.avif") !important;
+}
+
+.talampaya-fondo {
+  background-image: url("../../assets/img/norte/la-rioja/talampaya/talampaya1.png") !important;
+}
+
+/* --- Misiones ---*/
+.cataratas-fondo {
+  background-image: url("../../assets/img/norte/misiones/cataratas/cataratas1.jpg") !important;
+}
+
+.ruinas-fondo {
+  background-image: url("../../assets/img/norte/misiones/ruinas-san-ignacio/ruinas1.jpg") !important;
+}
+
+.encantado-fondo {
+  background-image: url("../../assets/img/norte/misiones/salto-encantado/saltoEncantado1.jpg") !important;
+}
+
+.mocona-fondo {
+  background-image: url("../../assets/img/norte/misiones/saltos-mocona/saltos1.jpg") !important;
+}
+
+.misionera-fondo {
+  background-image: url("../../assets/img/norte/misiones/selva-misionera/selva1.jpg") !important;
+}
+
+/* --- Salta ---*/
+.cachi-fondo {
+  background-image: url("../../assets/img/norte/salta/cachi/cachi1.jpg") !important;
+}
+
+.cafayate-fondo {
+  background-image: url("../../assets/img/norte/salta/cafayate/cafayate1.jpg") !important;
+}
+
+.cardones-fondo {
+  background-image: url("../../assets/img/norte/salta/cardones/cardones1.jpg") !important;
+}
+
+.obispo-fondo {
+  background-image: url("../../assets/img/norte/salta/cuesta-obispo/obispo1.jpg") !important;
+}
+
+.nubes-fondo {
+  background-image: url("../../assets/img/norte/salta/tren-de-las-nubes/tren1.jpg") !important;
+}
+
+/* --- Santiago del estero ---*/
+.embalseRio-fondo {
+  background-image: url("../../assets/img/norte/stgo-del-estero/embalse-rio-hondo/embalseRio1.png") !important;
+}
+
+.copo-fondo {
+  background-image: url("../../assets/img/norte/stgo-del-estero/parque-copo/parqueCopo1.jpg") !important;
+}
+
+.carretero-fondo {
+  background-image: url("../../assets/img/norte/stgo-del-estero/puente-carretero/puente1.jpg") !important;
+}
+
+.ambagasta-fondo {
+  background-image: url("../../assets/img/norte/stgo-del-estero/salinas-ambagasta/salinasA1.jpg") !important;
+}
+
+.termasRio-fondo {
+  background-image: url("../../assets/img/norte/stgo-del-estero/termas-rio-hondo/termas1.jpg") !important;
+}
+
+/* --- Tucuman ---*/
+.amaicha-fondo {
+  background-image: url("../../assets/img/norte/tucuman/amaicha/amaicha1.jpg") !important;
+}
+
+.cadillal-fondo {
+  background-image: url("../../assets/img/norte/tucuman/cadillal/cadillal1.jpg") !important;
+}
+
+.ruinasQuilmes-fondo {
+  background-image: url("../../assets/img/norte/tucuman/ruinas-quilmes/ruinasQuilmes1.jpg") !important;
+}
+
+.javier-fondo {
+  background-image: url("../../assets/img/norte/tucuman/san-javier/sanJavier1.jpg") !important;
+}
+
+.tafi-fondo {
+  background-image: url("../../assets/img/norte/tucuman/tafi/tafi1.jpg") !important;
+}
+
 .catamarca-fondo {
   background-color: #81171B !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .chaco-fondo {
   background-color: #94231e !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .corrientes-fondo {
   background-color: #a23020 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .formosa-fondo {
   background-color: #ad2e24 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .jujuy-fondo {
   background-color: #b8392c !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .la-rioja-fondo {
   background-color: #c75146 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .misiones-fondo {
   background-color: #d96a4e !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .salta-fondo {
   background-color: #e17a50 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .santiago-del-estero-fondo {
   background-color: #e88652 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .tucuman-fondo {
   background-color: #EA8C55 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 /* --- CENTRO ---*/
+.video-centro {
+  background-color: var(--fondo-centro);
+}
+
 .titulo_centro {
   color: var(--texto-centro) !important;
   font-size: 6rem !important;
@@ -197,43 +425,245 @@ header .txt_logo .logo {
   }
 }
 
+/* --- BSAS ---*/
+.cifuentes-fondo {
+  background-image: url("../../assets/img/centro/buenos-aires/cascada-cifuentes/cifuentes1.png") !important;
+}
+
+.delta-fondo {
+  background-image: url("../../assets/img/centro/buenos-aires/delta-tigre/delta-tigre1.jpeg") !important;
+}
+
+.lobos-fondo {
+  background-image: url("../../assets/img/centro/buenos-aires/laguna-lobos/laguna-lobos1.jpg") !important;
+}
+
+.otamendi-fondo {
+  background-image: url("../../assets/img/centro/buenos-aires/reserva-otamendi/reserva-otamendi1.jpg") !important;
+}
+
+.ventana-fondo {
+  background-image: url("../../assets/img/centro/buenos-aires/sierra-ventana/sierra-ventana1.jpg") !important;
+}
+
+/* --- CABA ---*/
+.rosada-fondo {
+  background-image: url("../../assets/img/centro/caba/casa-rosada/casa-rosada1.jpg") !important;
+}
+
+.japones-fondo {
+  background-image: url("../../assets/img/centro/caba/jardin-japones/jardin-japones1.jpg") !important;
+}
+
+.obelisco-fondo {
+  background-image: url("../../assets/img/centro/caba/obelisco/obelisco1.jpg") !important;
+}
+
+.madero-fondo {
+  background-image: url("../../assets/img/centro/caba/puerto-madero/puerto-medero1.jpg") !important;
+}
+
+.reservaCostanera-fondo {
+  background-image: url("../../assets/img/centro/caba/reserva-costanera/reserva-costa1.jpg") !important;
+}
+
+/* --- Cordoba ---*/
+.ansenuza-fondo {
+  background-image: url("../../assets/img/centro/cordoba/ansenuza/ansenuza1.jpg") !important;
+}
+
+.calamuchita-fondo {
+  background-image: url("../../assets/img/centro/cordoba/calamuchita/calamuchita1.jpg") !important;
+}
+
+.gigantes-fondo {
+  background-image: url("../../assets/img/centro/cordoba/los-gigantes/gigantes1.jpg") !important;
+}
+
+.condorito-fondo {
+  background-image: url("../../assets/img/centro/cordoba/quebrada-condorito/condorito1.jpg") !important;
+}
+
+.uritorco-fondo {
+  background-image: url("../../assets/img/centro/cordoba/uritorco/uritorco1.jpg") !important;
+}
+
+/* --- Entre Rios ---*/
+.gualeguaychu-fondo {
+  background-image: url("../../assets/img/centro/entre-rios/costa-gualeguaychu/gualeguaychu1.jpg") !important;
+}
+
+.elPalmar-fondo {
+  background-image: url("../../assets/img/centro/entre-rios/el-palmar/palmar1.jpg") !important;
+}
+
+.islaPuerto-fondo {
+  background-image: url("../../assets/img/centro/entre-rios/isla-puerto/isla-puerto1.jpg") !important;
+}
+
+.victoria-fondo {
+  background-image: url("../../assets/img/centro/entre-rios/puente-victoria/victoria1.jpg") !important;
+}
+
+.federacion-fondo {
+  background-image: url("../../assets/img/centro/entre-rios/termas-federacion/federacion1.jpg") !important;
+}
+
+/* --- La pampa ---*/
+.tomas-fondo {
+  background-image: url("../../assets/img/centro/la-pampa/laguna-don-tomas/laguna-don-tomas1.jpg") !important;
+}
+
+.ultracan-fondo {
+  background-image: url("../../assets/img/centro/la-pampa/laguna-ultracan/laguna-ultracan1.png") !important;
+}
+
+.lihue-fondo {
+  background-image: url("../../assets/img/centro/la-pampa/parque-lihue-calel/parque-lihuel1.jpg") !important;
+}
+
+.luro-fondo {
+  background-image: url("../../assets/img/centro/la-pampa/parque-luro/parque-luro1.jpg") !important;
+}
+
+.salinasPampa-fondo {
+  background-image: url("../../assets/img/centro/la-pampa/salinas-pampeanas/salinas-pampa.jpg") !important;
+}
+
+/* --- Mendoza ---*/
+.aconcagua-fondo {
+  background-image: url("../../assets/img/centro/mendoza/aconcagua/aconcagua1.jpg") !important;
+}
+
+.atuel-fondo {
+  background-image: url("../../assets/img/centro/mendoza/canon-atuel/canon-atuel1.jpg") !important;
+}
+
+.laguna-diamante-fondo {
+  background-image: url("../../assets/img/centro/mendoza/laguna-diamante/lag-diamante1.jpg") !important;
+}
+
+.parque-san-martin-fondo {
+  background-image: url("../../assets/img/centro/mendoza/parque-san-martin/parque-san-martin1.jpg") !important;
+}
+
+.potrerillos-fondo {
+  background-image: url("../../assets/img/centro/mendoza/potrerillos/potrerillos1.jpg") !important;
+}
+
+/* --- San Juan ---*/
+.calingasta-fondo {
+  background-image: url("../../assets/img/centro/san-juan/calingasta/caligasta1.jpg") !important;
+}
+
+.ansilta-fondo {
+  background-image: url("../../assets/img/centro/san-juan/cordillera-ansilta/cordillera-ansilta1.jpg") !important;
+}
+
+.caracoles-fondo {
+  background-image: url("../../assets/img/centro/san-juan/embalse-caracoles/embalse-caracoles1.jpg") !important;
+}
+
+.ullum-fondo {
+  background-image: url("../../assets/img/centro/san-juan/embalse-ullum/embalse-ullum1.jpeg") !important;
+}
+
+.luna-fondo {
+  background-image: url("../../assets/img/centro/san-juan/valle-luna/valle-luna1.jpg") !important;
+}
+
+/* --- San Luis ---*/
+.florida-fondo {
+  background-image: url("../../assets/img/centro/san-luis/dique-florida/dique-florida1.jpg") !important;
+}
+
+.merlo-fondo {
+  background-image: url("../../assets/img/centro/san-luis/merlo/merlo1.jpg") !important;
+}
+
+.potrero-fondo {
+  background-image: url("../../assets/img/centro/san-luis/potrero-funes/potrero-funes1.jpg") !important;
+}
+
+.moneda-fondo {
+  background-image: url("../../assets/img/centro/san-luis/salto-de-la-moneda/salto-de-la-moneda1.jpg") !important;
+}
+
+.quijadas-fondo {
+  background-image: url("../../assets/img/centro/san-luis/sierra-de-las-quijadas/la-quijada1.jpg") !important;
+}
+
+/* --- Santa Fe ---*/
+.balnearioFlorida-fondo {
+  background-image: url("../../assets/img/centro/santa-fe/balneario-la-florida/balne1.jpg") !important;
+}
+
+.monumento-fondo {
+  background-image: url("../../assets/img/centro/santa-fe/monumento-bandera/bandera1.webp") !important;
+}
+
+.independencia-fondo {
+  background-image: url("../../assets/img/centro/santa-fe/parque-independencia/parque-independencia1.webp") !important;
+}
+
+.garay-fondo {
+  background-image: url("../../assets/img/centro/santa-fe/parque-juan-garay/garay1.jpg") !important;
+}
+
+.urquiza-fondo {
+  background-image: url("../../assets/img/centro/santa-fe/parque-urquiza/urquiza1.jpg") !important;
+}
+
 .bsas-fondo {
   background-color: #6b8e23 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .caba-fondo {
-  background-color: #7a9527 !important;
+  background-color: #82a02a !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .cordoba-fondo {
-  background-color: #889d2b !important;
+  background-color: #95ab31 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .entre-rios-fondo {
   background-color: #9acd32 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .la-pampa-fondo {
   background-color: #adc43c !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .mendoza-fondo {
   background-color: #c2b946 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .san-juan-fondo {
   background-color: #daa520 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .san-luis-fondo {
   background-color: #c89516 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .santa-fe-fondo {
   background-color: #b8860b !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 /* --- SUR ---*/
+.video-sur {
+  background-color: var(--fondo-sur);
+}
+
 .titulo_sur {
   color: var(--texto-sur) !important;
   font-size: 6rem !important;
@@ -257,22 +687,27 @@ header .txt_logo .logo {
 
 .chubut-fondo {
   background-color: #0077b6 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .neuquen-fondo {
   background-color: #3096cd !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .rio-negro-fondo {
   background-color: #00b4d8 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .santa-cruz-fondo {
   background-color: #90e0ef !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 .tierra-del-fuego-fondo {
   background-color: #caf0f8 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 /* --- MAPA ---*/
@@ -388,9 +823,16 @@ footer {
 /* --- Contenido Acordiones --- */
 .titulo_lugar {
   font-family: var(--font-Poppins);
-  color: var(--texto-norte);
-  font-weight: 400;
-  padding: 10px 0;
+  color: rgb(244, 208, 184);
+  font-weight: 300;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .titulo_lugar {
+    font-size: 2rem !important;
+    padding: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -401,17 +843,17 @@ footer {
 
 .lugar_provincia_prueba {
   background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
-  height: 10rem;
+  height: 13rem;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .lugar_provincia_prueba {
-    height: 13rem;
+    height: 15rem;
   }
 }
 
 .degrade {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to right, rgba(84, 8, 4, 0.6), rgba(234, 140, 85, 0.5176470588));
   height: 100%;
 }
 

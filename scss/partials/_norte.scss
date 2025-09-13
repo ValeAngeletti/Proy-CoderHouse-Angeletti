@@ -1,5 +1,9 @@
 @use "mixins";
 
+.video-norte{
+    background-color: var(--fondo-norte);
+}
+
 .titulo_norte{
     @include mixins.titulos-paginas (var(--texto-norte), 6rem);
 
@@ -13,5 +17,156 @@
 
     @media screen and (max-width: 768px){
         @include mixins.subtitulos-paginas-responsve();
+    }
+}
+
+/* --- Catamarca ---*/
+$fondos-catamarca: (
+    "piedra": url("../../assets/img/norte/catamarca/campo-piedra/pomez1.jpg"),
+    "fiambala": url("../../assets/img/norte/catamarca/fiambala/fiambala1.jpg"),
+    "rutaseis": url("../../assets/img/norte/catamarca/ruta-6000/ruta1.jpg"),
+    "antofalla": url("../../assets/img/norte/catamarca/salar-antofalla/salarAnto1.jpg"),
+    "galan": url("../../assets/img/norte/catamarca/volcan-galan/volcanG1.jpg")
+);
+
+@each $name, $url in $fondos-catamarca {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Chaco ---*/
+$fondos-chaco: (
+    "cerrito": url("../../assets/img/norte/chaco/isla-cerrito/isla-cerrito1.webp"),
+    "palmar": url("../../assets/img/norte/chaco/laguna-palmar/laguna-palmar3.jpg"),
+    "parChaco": url("../../assets/img/norte/chaco/parque-chaco/parqueChaco1.jpg"),
+    "impenetrable": url("../../assets/img/norte/chaco/parque-impenetrable/impenetrable1.jpg"),
+    "bermejo": url("../../assets/img/norte/chaco/rio-bermejo/bermejo1.jpg")
+);
+
+@each $name, $url in $fondos-chaco {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Corrientes ---*/
+$fondos-corrientes: (
+    "costaUru": url("../../assets/img/norte/corrientes/costa-uruguay/costa.jpg"),
+    "empedrado": url("../../assets/img/norte/corrientes/empedrado/empedrado1.jpg"),
+    "esteros": url("../../assets/img/norte/corrientes/esteros-ibera/esteros1.webp"),
+    "mburucuya": url("../../assets/img/norte/corrientes/mburucuya/mburucuya1.jpg"),
+    "parana": url("../../assets/img/norte/corrientes/rio-parana/parana1.jpg")
+);
+
+@each $name, $url in $fondos-corrientes {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Formosa ---*/
+$fondos-formosa: (
+    "banado": url("../../assets/img/norte/formosa/banado-estrella/banado1.jpg"),
+    "lagunaBlanca": url("../../assets/img/norte/formosa/laguna-blanca/lagunaBlanca1.jpg"),
+    "lagunaOca": url("../../assets/img/norte/formosa/laguna-oca/laguna1.jpg"),
+    "parqPilco": url("../../assets/img/norte/formosa/parque-pilcomayo/parquePilco1.jpg"),
+    "rioPilco": url("../../assets/img/norte/formosa/rio-pilcomayo/rioPilco1.jpg")
+);
+
+@each $name, $url in $fondos-formosa {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Jujuy ---*/
+$fondos-jujuy: (
+    "pozuelos": url("../../assets/img/norte/jujuy/pozuelos/pozuelos1.jpg"),
+    "purma": url("../../assets/img/norte/jujuy/purmamarca/purma1.jpg"),
+    "quebrada": url("../../assets/img/norte/jujuy/quebrada/quebrada1.jpg"),
+    "salinasJu": url("../../assets/img/norte/jujuy/salinas/salinas1.png"),
+    "serrania": url("../../assets/img/norte/jujuy/serrania/serrania1.jpg")
+);
+
+@each $name, $url in $fondos-jujuy {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+
+/* --- La Rioja ---*/
+$fondos-la-rioja: (
+    "anchumbil": url("../../assets/img/norte/la-rioja/canon-anchumbil/canon1.jpg"),
+    "miranda": url("../../assets/img/norte/la-rioja/cuesta-miranda/miranda1.jpg"),
+    "famatina": url("../../assets/img/norte/la-rioja/famatina/famatina1.jpg"),
+    "lagBrava": url("../../assets/img/norte/la-rioja/laguna-brava/lagunaBrava1.avif"),
+    "talampaya": url("../../assets/img/norte/la-rioja/talampaya/talampaya1.png")
+);
+
+@each $name, $url in $fondos-la-rioja {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Misiones ---*/
+$fondos-misiones: (
+    "cataratas": url("../../assets/img/norte/misiones/cataratas/cataratas1.jpg"),
+    "ruinas": url("../../assets/img/norte/misiones/ruinas-san-ignacio/ruinas1.jpg"),
+    "encantado": url("../../assets/img/norte/misiones/salto-encantado/saltoEncantado1.jpg"),
+    "mocona": url("../../assets/img/norte/misiones/saltos-mocona/saltos1.jpg"),
+    "misionera": url("../../assets/img/norte/misiones/selva-misionera/selva1.jpg")
+);
+
+@each $name, $url in $fondos-misiones {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Salta ---*/
+$fondos-salta: (
+    "cachi": url("../../assets/img/norte/salta/cachi/cachi1.jpg"),
+    "cafayate": url("../../assets/img/norte/salta/cafayate/cafayate1.jpg"),
+    "cardones": url("../../assets/img/norte/salta/cardones/cardones1.jpg"),
+    "obispo": url("../../assets/img/norte/salta/cuesta-obispo/obispo1.jpg"),
+    "nubes": url("../../assets/img/norte/salta/tren-de-las-nubes/tren1.jpg")
+);
+
+@each $name, $url in $fondos-salta {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Santiago del estero ---*/
+$fondos-stgo-del-estero: (
+    "embalseRio": url("../../assets/img/norte/stgo-del-estero/embalse-rio-hondo/embalseRio1.png"),
+    "copo": url("../../assets/img/norte/stgo-del-estero/parque-copo/parqueCopo1.jpg"),
+    "carretero": url("../../assets/img/norte/stgo-del-estero/puente-carretero/puente1.jpg"),
+    "ambagasta": url("../../assets/img/norte/stgo-del-estero/salinas-ambagasta/salinasA1.jpg"),
+    "termasRio": url("../../assets/img/norte/stgo-del-estero/termas-rio-hondo/termas1.jpg")
+);
+
+@each $name, $url in $fondos-stgo-del-estero {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Tucuman ---*/
+$fondos-tucuman: (
+    "amaicha": url("../../assets/img/norte/tucuman/amaicha/amaicha1.jpg"),
+    "cadillal": url("../../assets/img/norte/tucuman/cadillal/cadillal1.jpg"),
+    "ruinasQuilmes": url("../../assets/img/norte/tucuman/ruinas-quilmes/ruinasQuilmes1.jpg"),
+    "javier": url("../../assets/img/norte/tucuman/san-javier/sanJavier1.jpg"),
+    "tafi": url("../../assets/img/norte/tucuman/tafi/tafi1.jpg")
+);
+
+@each $name, $url in $fondos-tucuman {
+    .#{$name}-fondo {
+        background-image: $url !important;
     }
 }
