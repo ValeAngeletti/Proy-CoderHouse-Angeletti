@@ -1,5 +1,82 @@
 @use "mixins";
 
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    
+
+    .accordion-item {
+        border: 0;           
+        background: transparent;     
+        position: relative;
+        overflow: hidden;
+
+        .accordion-header{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+
+            .accordion-button{
+                border: 0;
+                box-shadow: none;
+                padding: 1rem 1.25rem;
+                border-radius: 0;
+                width: 100%; 
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center; 
+                background: transparent;
+                position: relative;
+                z-index: 2;
+
+                &::before{
+                    content: '▼';
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    backdrop-filter: blur(10px);
+                    font-size: 1.2rem;
+                    color: white;
+                    flex-shrink: 0;
+                    order: 2; 
+                }
+
+                &:hover::before {
+                    background: rgba(19, 19, 19, 0.388);
+                    transform: scale(1.1);
+                }
+
+                &:not(.collapsed)::before {
+                    transform: rotate(180deg);
+                }
+                
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                &::after {
+                    display: none !important;
+                }
+            }
+        }
+
+    }
+}
+
 .provincia {
     width: 100%;
     
@@ -15,7 +92,7 @@
 }
 
 .titulo_lugar_sur {
-    @include mixins.tarjetas(rgb(5, 163, 248))
+    @include mixins.tarjetas(rgb(149, 211, 244))
 }
 
 .nombre-provincia{
@@ -48,6 +125,6 @@
 }
 
 .degrade-sur {
-    @include mixins.degrade(#03055eac, #caf0f895);
+    @include mixins.degrade(#0e108fac, #687df595);
     height: 100%;
 }

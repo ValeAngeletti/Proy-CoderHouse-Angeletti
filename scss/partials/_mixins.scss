@@ -26,6 +26,11 @@
     background: linear-gradient(to right , $color1, $color2);
 }
 
+@mixin tarjetas-provincias($color-fondo1, $color-fondo2, $color-fondo3, $color-fondo4, $color-texto){
+    background: linear-gradient(135deg , $color-fondo1 0%, $color-fondo2 30%, $color-fondo3 70%, $color-fondo4 100%) !important;
+    color: $color-texto !important;
+}
+
 @mixin tarjetas($color){
     font-family: var(--font-Poppins);
     color: $color;

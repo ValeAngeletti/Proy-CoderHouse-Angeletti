@@ -115,7 +115,7 @@ header .txt_logo .logo {
 }
 
 /* --- NORTE ---*/
-.video-norte {
+.video-norte, .seccion_provincias-norte {
   background-color: var(--fondo-norte);
 }
 
@@ -140,54 +140,9 @@ header .txt_logo .logo {
   }
 }
 
-.catamarca-fondo {
-  background-color: #81171B !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.chaco-fondo {
-  background-color: #94231e !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.corrientes-fondo {
-  background-color: #a23020 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.formosa-fondo {
-  background-color: #ad2e24 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.jujuy-fondo {
-  background-color: #b8392c !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.la-rioja-fondo {
-  background-color: #c75146 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.misiones-fondo {
-  background-color: #d96a4e !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.salta-fondo {
-  background-color: #e17a50 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.santiago-del-estero-fondo {
-  background-color: #e88652 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.tucuman-fondo {
-  background-color: #EA8C55 !important;
-  color: rgb(18, 17, 17) !important;
+.fondo-provincias-norte {
+  background: linear-gradient(135deg, #8B1114 0%, #A81A1A 30%, #FE9B57 70%, #FFB873 100%) !important;
+  color: rgb(246, 215, 188) !important;
 }
 
 /* --- Catamarca ---*/
@@ -401,7 +356,7 @@ header .txt_logo .logo {
 }
 
 /* --- CENTRO ---*/
-.video-centro {
+.video-centro, .seccion_provincias-centro {
   background-color: var(--fondo-centro);
 }
 
@@ -426,49 +381,9 @@ header .txt_logo .logo {
   }
 }
 
-.bsas-fondo {
-  background-color: #6b8e23 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.caba-fondo {
-  background-color: #82a02a !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.cordoba-fondo {
-  background-color: #95ab31 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.entre-rios-fondo {
-  background-color: #9acd32 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.la-pampa-fondo {
-  background-color: #adc43c !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.mendoza-fondo {
-  background-color: #c2b946 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.san-juan-fondo {
-  background-color: #daa520 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.san-luis-fondo {
-  background-color: #c89516 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.santa-fe-fondo {
-  background-color: #b8860b !important;
-  color: rgb(18, 17, 17) !important;
+.fondo-provincias-centro {
+  background: linear-gradient(135deg, #3C4B22 0%, #6B8E23 30%, #DAA520 70%, #B8860B 100%) !important;
+  color: #F5F5DC !important;
 }
 
 /* --- BSAS ---*/
@@ -661,7 +576,7 @@ header .txt_logo .logo {
 }
 
 /* --- SUR ---*/
-.video-sur {
+.video-sur, .seccion_provincias-sur {
   background-color: var(--fondo-sur);
 }
 
@@ -686,29 +601,9 @@ header .txt_logo .logo {
   }
 }
 
-.chubut-fondo {
-  background-color: #0077b6 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.neuquen-fondo {
-  background-color: #3096cd !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.rio-negro-fondo {
-  background-color: #00b4d8 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.santa-cruz-fondo {
-  background-color: #90e0ef !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.tierra-del-fuego-fondo {
-  background-color: #caf0f8 !important;
-  color: rgb(18, 17, 17) !important;
+.fondo-provincias-sur {
+  background: linear-gradient(135deg, #03045E 0%, #0077B6 30%, #3f76be 70%, #4b4dd3 100%) !important;
+  color: #E8F4FD !important;
 }
 
 /* --- Chubut ---*/
@@ -922,6 +817,73 @@ footer {
 }
 
 /* --- ACORDIONES ---*/
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.accordion .accordion-item {
+  border: 0;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.accordion .accordion-item .accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  border: 0;
+  box-shadow: none;
+  padding: 1rem 1.25rem;
+  border-radius: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+.accordion .accordion-item .accordion-header .accordion-button::before {
+  content: "▼";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  font-size: 1.2rem;
+  color: white;
+  flex-shrink: 0;
+  order: 2;
+}
+.accordion .accordion-item .accordion-header .accordion-button:hover::before {
+  background: rgba(19, 19, 19, 0.388);
+  transform: scale(1.1);
+}
+.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::before {
+  transform: rotate(180deg);
+}
+.accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none !important;
+}
+
 .provincia {
   width: 100%;
 }
@@ -957,7 +919,7 @@ footer {
 
 .titulo_lugar_sur {
   font-family: var(--font-Poppins);
-  color: rgb(5, 163, 248);
+  color: rgb(149, 211, 244);
   font-weight: 300;
   padding: 1rem 0;
   font-size: 2.5rem;
@@ -997,7 +959,7 @@ footer {
 }
 
 .degrade-sur {
-  background: linear-gradient(to right, rgba(3, 5, 94, 0.6745098039), rgba(202, 240, 248, 0.5843137255));
+  background: linear-gradient(to right, rgba(14, 16, 143, 0.6745098039), rgba(104, 125, 245, 0.5843137255));
   height: 100%;
 }
 
@@ -1106,7 +1068,7 @@ footer {
 
 :root {
   /*Norte*/
-  --fondo-norte: #540804;
+  --fondo-norte: #6B0F08;
   --texto-norte: #EA8C55;
   /*Centro*/
   --fondo-centro: #3C4B22;
@@ -1161,12 +1123,23 @@ footer {
 }
 
 .nombre-provincia {
-  font-size: 2rem !important;
+  font-size: 2.3rem !important;
   padding: 1.5rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: white;
 }
 
 .videos_banners {
   pointer-events: none;
+}
+
+.seccion_provincias {
+  padding: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .seccion_provincias {
+    padding: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

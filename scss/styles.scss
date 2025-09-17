@@ -41,7 +41,7 @@
 :root {
 
     /*Norte*/
-    --fondo-norte: #540804;
+    --fondo-norte: #6B0F08;
     --texto-norte: #EA8C55;
 
     /*Centro*/
@@ -102,9 +102,20 @@
 }
 
 .nombre-provincia {
-    @include font-padding(2rem, 1.5rem, 1.5rem);
+    @include font-padding(2.3rem, 1.5rem, 1.5rem);
+    font-weight: 600 !important;
+    color: white;
+
 }
 
 .videos_banners {
     pointer-events: none;
+}
+
+.seccion_provincias{
+    padding: 5rem;
+
+    @media screen and (max-width: 768px){
+        padding: 2.5rem;
+    }
 }
