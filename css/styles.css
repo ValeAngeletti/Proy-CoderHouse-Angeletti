@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --- HEADER ---*/
 header {
   background-color: var(--azul-oscuro-general);
@@ -137,6 +138,56 @@ header .txt_logo .logo {
     font-size: 1.5rem !important;
     padding: 0 1rem !important;
   }
+}
+
+.catamarca-fondo {
+  background-color: #81171B !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.chaco-fondo {
+  background-color: #94231e !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.corrientes-fondo {
+  background-color: #a23020 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.formosa-fondo {
+  background-color: #ad2e24 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.jujuy-fondo {
+  background-color: #b8392c !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.la-rioja-fondo {
+  background-color: #c75146 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.misiones-fondo {
+  background-color: #d96a4e !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.salta-fondo {
+  background-color: #e17a50 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.santiago-del-estero-fondo {
+  background-color: #e88652 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.tucuman-fondo {
+  background-color: #EA8C55 !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 /* --- Catamarca ---*/
@@ -349,56 +400,6 @@ header .txt_logo .logo {
   background-image: url("../../assets/img/norte/tucuman/tafi/tafi1.jpg") !important;
 }
 
-.catamarca-fondo {
-  background-color: #81171B !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.chaco-fondo {
-  background-color: #94231e !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.corrientes-fondo {
-  background-color: #a23020 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.formosa-fondo {
-  background-color: #ad2e24 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.jujuy-fondo {
-  background-color: #b8392c !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.la-rioja-fondo {
-  background-color: #c75146 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.misiones-fondo {
-  background-color: #d96a4e !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.salta-fondo {
-  background-color: #e17a50 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.santiago-del-estero-fondo {
-  background-color: #e88652 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.tucuman-fondo {
-  background-color: #EA8C55 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
 /* --- CENTRO ---*/
 .video-centro {
   background-color: var(--fondo-centro);
@@ -423,6 +424,51 @@ header .txt_logo .logo {
     font-size: 1.5rem !important;
     padding: 0 1rem !important;
   }
+}
+
+.bsas-fondo {
+  background-color: #6b8e23 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.caba-fondo {
+  background-color: #82a02a !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.cordoba-fondo {
+  background-color: #95ab31 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.entre-rios-fondo {
+  background-color: #9acd32 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.la-pampa-fondo {
+  background-color: #adc43c !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.mendoza-fondo {
+  background-color: #c2b946 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.san-juan-fondo {
+  background-color: #daa520 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.san-luis-fondo {
+  background-color: #c89516 !important;
+  color: rgb(18, 17, 17) !important;
+}
+
+.santa-fe-fondo {
+  background-color: #b8860b !important;
+  color: rgb(18, 17, 17) !important;
 }
 
 /* --- BSAS ---*/
@@ -614,51 +660,6 @@ header .txt_logo .logo {
   background-image: url("../../assets/img/centro/santa-fe/parque-urquiza/urquiza1.jpg") !important;
 }
 
-.bsas-fondo {
-  background-color: #6b8e23 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.caba-fondo {
-  background-color: #82a02a !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.cordoba-fondo {
-  background-color: #95ab31 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.entre-rios-fondo {
-  background-color: #9acd32 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.la-pampa-fondo {
-  background-color: #adc43c !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.mendoza-fondo {
-  background-color: #c2b946 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.san-juan-fondo {
-  background-color: #daa520 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.san-luis-fondo {
-  background-color: #c89516 !important;
-  color: rgb(18, 17, 17) !important;
-}
-
-.santa-fe-fondo {
-  background-color: #b8860b !important;
-  color: rgb(18, 17, 17) !important;
-}
-
 /* --- SUR ---*/
 .video-sur {
   background-color: var(--fondo-sur);
@@ -708,6 +709,111 @@ header .txt_logo .logo {
 .tierra-del-fuego-fondo {
   background-color: #caf0f8 !important;
   color: rgb(18, 17, 17) !important;
+}
+
+/* --- Chubut ---*/
+.alerces-fondo {
+  background-image: url("../../assets/img/sur/chubut/parque-alerces/alerces1.jpg") !important;
+}
+
+.peninsula-fondo {
+  background-image: url("../../assets/img/sur/chubut/peninsula-valdez/peninsula1.jpg") !important;
+}
+
+.parada-fondo {
+  background-image: url("../../assets/img/sur/chubut/piedra-parada/piedra1.jpg") !important;
+}
+
+.doradillo-fondo {
+  background-image: url("../../assets/img/sur/chubut/playa-doradillo/doradillo1.jpg") !important;
+}
+
+.trevelin-fondo {
+  background-image: url("../../assets/img/sur/chubut/trevelin/trevelin1.jpg") !important;
+}
+
+/* --- Neuquen ---*/
+.copahue-fondo {
+  background-image: url("../../assets/img/sur/neuquen/parque-copahue/parque-copahue1.jpg") !important;
+}
+
+.sieteLagos-fondo {
+  background-image: url("../../assets/img/sur/neuquen/siete-lagos/siete-lagos1.jpg") !important;
+}
+
+.angostura-fondo {
+  background-image: url("../../assets/img/sur/neuquen/villa-la-angostura/villa-la-angostura1.jpg") !important;
+}
+
+.traful-fondo {
+  background-image: url("../../assets/img/sur/neuquen/villa-traful/villa-traful1.jpg") !important;
+}
+
+.lanin-fondo {
+  background-image: url("../../assets/img/sur/neuquen/volcan-lanin/volcan-lanin1.jpg") !important;
+}
+
+/* --- Rio Negro ---*/
+.buitrera-fondo {
+  background-image: url("../../assets/img/sur/rio-negro/cañadon-buitrera/cañadon-buitrera1.jpg") !important;
+}
+
+.catedral-fondo {
+  background-image: url("../../assets/img/sur/rio-negro/cerro-catedral/cerro-catedral1.jpg") !important;
+}
+
+.circuito-fondo {
+  background-image: url("../../assets/img/sur/rio-negro/circuito-chico/circuito-chico1.jpg") !important;
+}
+
+.bolson-fondo {
+  background-image: url("../../assets/img/sur/rio-negro/el-bolson/el-bolson1.webp") !important;
+}
+
+.grutas-fondo {
+  background-image: url("../../assets/img/sur/rio-negro/las-grutas/las-grutas1.jpg") !important;
+}
+
+/* --- Santa Cruz ---*/
+.manos-fondo {
+  background-image: url("../../assets/img/sur/santa-cruz/cueva-manos/cueva-manos1.jpg") !important;
+}
+
+.perito-fondo {
+  background-image: url("../../assets/img/sur/santa-cruz/glaciar-perito/glaciar-perito1.jpg") !important;
+}
+
+.lagoArgentino-fondo {
+  background-image: url("../../assets/img/sur/santa-cruz/lago-argentino/lago-argentino1.jpg") !important;
+}
+
+.fitz-fondo {
+  background-image: url("../../assets/img/sur/santa-cruz/monte-fitz-roy/monte-fitz-roy1.jpg") !important;
+}
+
+.monteLeon-fondo {
+  background-image: url("../../assets/img/sur/santa-cruz/parque-monte-leon/parque-monte-leon1.jpg") !important;
+}
+
+/* --- Tierra del Fuego ---*/
+.beagle-fondo {
+  background-image: url("../../assets/img/sur/tierra-del-fuego/canal-beagle/canal-beagle1.jpg") !important;
+}
+
+.eclaireurs-fondo {
+  background-image: url("../../assets/img/sur/tierra-del-fuego/faro-les-eclaireurs/faro-les-eclaireurs1.jpg") !important;
+}
+
+.martial-fondo {
+  background-image: url("../../assets/img/sur/tierra-del-fuego/glaciar-martial/glaciar-martial1.jpg") !important;
+}
+
+.esmeralda-fondo {
+  background-image: url("../../assets/img/sur/tierra-del-fuego/laguna-esmeralda/laguna-esmeralda1.jpg") !important;
+}
+
+.parqueTierraFuego-fondo {
+  background-image: url("../../assets/img/sur/tierra-del-fuego/parque-tierra-fuego/parque-tierra-fuego1.jpg") !important;
 }
 
 /* --- MAPA ---*/
@@ -821,7 +927,7 @@ footer {
 }
 
 /* --- Contenido Acordiones --- */
-.titulo_lugar {
+.titulo_lugar_norte {
   font-family: var(--font-Poppins);
   color: rgb(244, 208, 184);
   font-weight: 300;
@@ -829,7 +935,35 @@ footer {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 768px) {
-  .titulo_lugar {
+  .titulo_lugar_norte {
+    font-size: 2rem !important;
+    padding: 1rem;
+  }
+}
+
+.titulo_lugar_centro {
+  font-family: var(--font-Poppins);
+  color: rgb(98, 227, 113);
+  font-weight: 300;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .titulo_lugar_centro {
+    font-size: 2rem !important;
+    padding: 1rem;
+  }
+}
+
+.titulo_lugar_sur {
+  font-family: var(--font-Poppins);
+  color: rgb(5, 163, 248);
+  font-weight: 300;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .titulo_lugar_sur {
     font-size: 2rem !important;
     padding: 1rem;
   }
@@ -852,8 +986,18 @@ footer {
   }
 }
 
-.degrade {
+.degrade-norte {
   background: linear-gradient(to right, rgba(84, 8, 4, 0.6), rgba(234, 140, 85, 0.5176470588));
+  height: 100%;
+}
+
+.degrade-centro {
+  background: linear-gradient(to right, rgba(60, 75, 34, 0.6117647059), rgba(184, 135, 11, 0.6274509804));
+  height: 100%;
+}
+
+.degrade-sur {
+  background: linear-gradient(to right, rgba(3, 5, 94, 0.6745098039), rgba(202, 240, 248, 0.5843137255));
   height: 100%;
 }
 
@@ -965,8 +1109,8 @@ footer {
   --fondo-norte: #540804;
   --texto-norte: #EA8C55;
   /*Centro*/
-  --texto-centro: #b8860b;
   --fondo-centro: #3C4B22;
+  --texto-centro: #b8860b;
   /*Sur*/
   --fondo-sur: #03045E;
   --texto-sur: #caf0f8;

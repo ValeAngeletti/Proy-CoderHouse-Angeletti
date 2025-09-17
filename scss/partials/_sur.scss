@@ -19,3 +19,93 @@
         @include mixins.subtitulos-paginas-responsve();
     }
 }
+
+$fondos-sur-map: (
+    "chubut": #0077b6,
+    "neuquen": #3096cd,
+    "rio-negro": #00b4d8,
+    "santa-cruz": #90e0ef,
+    "tierra-del-fuego": #caf0f8
+);
+
+@each $name, $color in $fondos-sur-map {
+    .#{$name}-fondo {
+        background-color: $color !important;
+        color: rgb(18, 17, 17) !important;
+    }
+}
+
+/* --- Chubut ---*/
+$fondos-chubut: (
+    "alerces": url("../../assets/img/sur/chubut/parque-alerces/alerces1.jpg"),
+    "peninsula": url("../../assets/img/sur/chubut/peninsula-valdez/peninsula1.jpg"),
+    "parada": url("../../assets/img/sur/chubut/piedra-parada/piedra1.jpg"),
+    "doradillo": url("../../assets/img/sur/chubut/playa-doradillo/doradillo1.jpg"),
+    "trevelin": url("../../assets/img/sur/chubut/trevelin/trevelin1.jpg")
+);
+
+@each $name, $url in $fondos-chubut {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Neuquen ---*/
+$fondos-neuquen: (
+    "copahue": url("../../assets/img/sur/neuquen/parque-copahue/parque-copahue1.jpg"),
+    "sieteLagos": url("../../assets/img/sur/neuquen/siete-lagos/siete-lagos1.jpg"),
+    "angostura": url("../../assets/img/sur/neuquen/villa-la-angostura/villa-la-angostura1.jpg"),
+    "traful": url("../../assets/img/sur/neuquen/villa-traful/villa-traful1.jpg"),
+    "lanin": url("../../assets/img/sur/neuquen/volcan-lanin/volcan-lanin1.jpg")
+);
+
+@each $name, $url in $fondos-neuquen {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Rio Negro ---*/
+$fondos-rio-negro: (
+    "buitrera": url("../../assets/img/sur/rio-negro/cañadon-buitrera/cañadon-buitrera1.jpg"),
+    "catedral": url("../../assets/img/sur/rio-negro/cerro-catedral/cerro-catedral1.jpg"),
+    "circuito": url("../../assets/img/sur/rio-negro/circuito-chico/circuito-chico1.jpg"),
+    "bolson": url("../../assets/img/sur/rio-negro/el-bolson/el-bolson1.webp"),
+    "grutas": url("../../assets/img/sur/rio-negro/las-grutas/las-grutas1.jpg")
+);
+
+@each $name, $url in $fondos-rio-negro {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Santa Cruz ---*/
+$fondos-santa-cruz: (
+    "manos": url("../../assets/img/sur/santa-cruz/cueva-manos/cueva-manos1.jpg"),
+    "perito": url("../../assets/img/sur/santa-cruz/glaciar-perito/glaciar-perito1.jpg"),
+    "lagoArgentino": url("../../assets/img/sur/santa-cruz/lago-argentino/lago-argentino1.jpg"),
+    "fitz": url("../../assets/img/sur/santa-cruz/monte-fitz-roy/monte-fitz-roy1.jpg"),
+    "monteLeon": url("../../assets/img/sur/santa-cruz/parque-monte-leon/parque-monte-leon1.jpg")
+);
+
+@each $name, $url in $fondos-santa-cruz {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}
+
+/* --- Tierra del Fuego ---*/
+$fondos-tierra-del-fuego: (
+    "beagle": url("../../assets/img/sur/tierra-del-fuego/canal-beagle/canal-beagle1.jpg"),
+    "eclaireurs": url("../../assets/img/sur/tierra-del-fuego/faro-les-eclaireurs/faro-les-eclaireurs1.jpg"),
+    "martial": url("../../assets/img/sur/tierra-del-fuego/glaciar-martial/glaciar-martial1.jpg"),
+    "esmeralda": url("../../assets/img/sur/tierra-del-fuego/laguna-esmeralda/laguna-esmeralda1.jpg"),
+    "parqueTierraFuego": url("../../assets/img/sur/tierra-del-fuego/parque-tierra-fuego/parque-tierra-fuego1.jpg")
+);
+
+@each $name, $url in $fondos-tierra-del-fuego {
+    .#{$name}-fondo {
+        background-image: $url !important;
+    }
+}

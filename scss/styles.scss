@@ -11,16 +11,13 @@
 
 /* --- NORTE ---*/
 @use "partials/norte";
-@use "partials/mapNorte";
 
 
 /* --- CENTRO ---*/
 @use "partials/centro";
-@use "partials/mapCentro";
 
 /* --- SUR ---*/
 @use "partials/sur";
-@use "partials/mapSur";
 
 /* --- MAPA ---*/
 @use "partials/mapa";
@@ -48,8 +45,8 @@
     --texto-norte: #EA8C55;
 
     /*Centro*/
-    --texto-centro: #b8860b;
     --fondo-centro: #3C4B22;
+    --texto-centro: #b8860b;
     
     /*Sur*/
     --fondo-sur: #03045E;

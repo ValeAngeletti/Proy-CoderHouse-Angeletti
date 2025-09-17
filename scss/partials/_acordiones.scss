@@ -1,20 +1,21 @@
+@use "mixins";
+
 .provincia {
     width: 100%;
     
 }
 
 /* --- Contenido Acordiones --- */
-.titulo_lugar {
-    font-family: var(--font-Poppins);
-    color: rgb(244, 208, 184);
-    font-weight: 300;
-    padding: 1rem 0;
-    font-size: 2.5rem;
+.titulo_lugar_norte {
+    @include mixins.tarjetas(rgb(244, 208, 184))
+}
 
-    @media screen and (max-width: 768px){
-        font-size: 2rem !important;
-        padding: 1rem;
-    }
+.titulo_lugar_centro {
+    @include mixins.tarjetas(rgb(98, 227, 113))
+}
+
+.titulo_lugar_sur {
+    @include mixins.tarjetas(rgb(5, 163, 248))
 }
 
 .nombre-provincia{
@@ -36,7 +37,17 @@
     }
 }
 
-.degrade {
-    background: linear-gradient(to right , #54080499, #ea8c5584);
+.degrade-norte {
+    @include mixins.degrade(#54080499, #ea8c5584);
+    height: 100%;
+}
+
+.degrade-centro {
+    @include mixins.degrade(#3c4b229c, #b8870ba0);
+    height: 100%;
+}
+
+.degrade-sur {
+    @include mixins.degrade(#03055eac, #caf0f895);
     height: 100%;
 }

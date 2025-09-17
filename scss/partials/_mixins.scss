@@ -21,3 +21,20 @@
     width: $ancho;
     height: $alto;
 }
+
+@mixin degrade($color1, $color2){
+    background: linear-gradient(to right , $color1, $color2);
+}
+
+@mixin tarjetas($color){
+    font-family: var(--font-Poppins);
+    color: $color;
+    font-weight: 300;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 2rem !important;
+        padding: 1rem;
+    }
+}
