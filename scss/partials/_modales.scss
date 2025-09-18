@@ -4,6 +4,10 @@
     border: 2px solid white !important;
     color: white !important;
     @include mixins.font-padding(1.5rem, 0.2rem, 3rem);
+
+    @media screen and (max-width: 768px) {
+        @include mixins.font-padding(1.2rem, 0.5rem, 1rem);
+    }
 }
 
 .modal-header {
@@ -42,7 +46,7 @@
         }
 
         .recomendaciones-mapa-modal{
-            font-family: var(--font-Playfair);
+            font-family: var(--font-playfair) !important;
             color: var(--azul-oscuro-general);
             @include mixins.font-padding(3rem, 1.5rem, 1.5rem);
             text-align: center;

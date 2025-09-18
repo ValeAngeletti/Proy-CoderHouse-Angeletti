@@ -774,6 +774,11 @@ header .txt_logo .logo {
   }
 }
 
+.fondo-provincias-mapa {
+  background: linear-gradient(135deg, #103C65 0%, #2E5A87 30%, #B8D4E3 70%, #d3e3f3 100%) !important;
+  color: #FFFFFF !important;
+}
+
 /* --- CONTACTO ---*/
 .titulo_contacto {
   font-size: 5rem;
@@ -970,6 +975,12 @@ footer {
   font-size: 1.5rem !important;
   padding: 0.2rem 3rem !important;
 }
+@media screen and (max-width: 768px) {
+  .btn-modal {
+    font-size: 1.2rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
 
 .modal-header {
   background-color: var(--fondo-blanco);
@@ -1008,7 +1019,7 @@ footer {
   }
 }
 .contenido-modal-mapa .txt-mapa-modal .recomendaciones-mapa-modal {
-  font-family: var(--font-Playfair);
+  font-family: var(--font-playfair) !important;
   color: var(--azul-oscuro-general);
   font-size: 3rem !important;
   padding: 1.5rem 1.5rem !important;

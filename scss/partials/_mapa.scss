@@ -57,3 +57,7 @@
         margin-top: 2rem;
     }
 }
+
+.fondo-provincias-mapa{
+    @include mixins.tarjetas-provincias(#103C65, #2E5A87 , #B8D4E3 ,#d3e3f3 , #FFFFFF );
+}
