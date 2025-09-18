@@ -40,7 +40,7 @@
 }
 
 .item_navbar{
-   color: #c14d45 !important; 
+   color: var(--items-header) !important; 
    padding: 0 1rem !important;
    transition: transform 0.3s !important;
    font-family: var(--font-poppins);

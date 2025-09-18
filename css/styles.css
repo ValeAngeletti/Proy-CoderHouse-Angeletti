@@ -51,7 +51,7 @@ header .txt_logo .logo {
 }
 
 .item_navbar {
-  color: #c14d45 !important;
+  color: var(--items-header) !important;
   padding: 0 1rem !important;
   transition: transform 0.3s !important;
   font-family: var(--font-poppins);
@@ -68,7 +68,7 @@ header .txt_logo .logo {
 
 /* --- INDEX ---*/
 .titulo {
-  color: var(--texto-naranja-fuerte) !important;
+  color: var(--color-logo) !important;
   font-size: 6rem !important;
 }
 
@@ -94,7 +94,7 @@ header .txt_logo .logo {
 }
 
 .titulo_descubrir {
-  color: var(--texto-naranja-fuerte) !important;
+  color: var(--color-logo) !important;
   font-size: 4rem !important;
 }
 @media screen and (max-width: 768px) {
@@ -717,7 +717,7 @@ header .txt_logo .logo {
 }
 
 .titulo_mapa {
-  color: var(--texto-naranja-fuerte) !important;
+  color: var(--color-logo) !important;
   font-size: 6rem !important;
   padding-top: 1rem;
 }
@@ -812,7 +812,7 @@ label {
 /* --- FOOTER ---*/
 footer {
   font-family: var(--font-poppins);
-  color: #c14d45 !important;
+  color: var(--items-header) !important;
   background-color: var(--azul-oscuro-general);
 }
 
@@ -1077,12 +1077,11 @@ footer {
   --fondo-sur: #03045E;
   --texto-sur: #caf0f8;
   /*Colores generales*/
-  --items-header: #c14d45;
+  --items-header: #FF8867;
   --fondo-blanco: #f7f2e2;
-  --naranja-claro: #c3392f;
-  --texto-naranja-fuerte: #b72e24;
+  --naranja-claro: #FE9975;
   --azul-oscuro-general: #041b30;
-  --color-logo: #bf1509;
+  --color-logo: #FF480F;
   --azul-oscuro-secundario: #103c65;
   /*Fonts*/
   --font-poppins: "Poppins";

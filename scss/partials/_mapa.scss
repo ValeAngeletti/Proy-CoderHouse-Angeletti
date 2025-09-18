@@ -5,7 +5,7 @@
 }
 
 .titulo_mapa{
-    @include mixins.titulos-paginas (var(--texto-naranja-fuerte), 6rem);
+    @include mixins.titulos-paginas (var(--color-logo), 6rem);
     padding-top: 1rem;
     @extend %texto-centro;
 
