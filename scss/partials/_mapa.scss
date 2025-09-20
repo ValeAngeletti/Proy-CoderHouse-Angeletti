@@ -53,6 +53,7 @@
 
 .provincias-mapa {
 
+
     @media screen and (max-width: 768px){
         margin-top: 2rem;
     }
@@ -61,3 +62,102 @@
 .fondo-provincias-mapa{
     @include mixins.tarjetas-provincias(#103C65, #2E5A87 , #B8D4E3 ,#d3e3f3 , #FFFFFF );
 }
+
+.provincias-mapa .accordion-item:nth-of-type(n+7) {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    margin-bottom: 0;
+    padding:0;
+    transition: 
+        max-height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        margin-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        padding 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-delay: 0s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(n+7) {
+    max-height: 100px; 
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s; 
+}
+
+.provincias-mapa .accordion-item:nth-of-type(7) {
+    transition-delay: 0s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(8) {
+    transition-delay: 0.05s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(9) {
+    transition-delay: 0.1s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(10) {
+    transition-delay: 0.15s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(11) {
+    transition-delay: 0.2s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(7) {
+    transition-delay: 0.1s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(8) {
+    transition-delay: 0.15s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(9) {
+    transition-delay: 0.2s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(10) {
+    transition-delay: 0.25s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(11) {
+    transition-delay: 0.3s;
+}
+
+#ver-mas-btn {
+    transition: 
+        background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "Ver más ▾";
+        transition: 
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity 0.3s ease;
+        display: inline-block;
+    }
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+#toggle-provincias:checked ~ .provincias-mapa #ver-mas-btn {
+    &::after {
+        content: "Ver menos ▴";
+    }
+}
+
+.provincias-mapa {
+  position: relative;
+}
+

@@ -779,6 +779,89 @@ header .txt_logo .logo {
   color: #FFFFFF !important;
 }
 
+.provincias-mapa .accordion-item:nth-of-type(n+7) {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  margin-bottom: 0;
+  padding: 0;
+  transition: max-height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), margin-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), padding 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 0s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(n+7) {
+  max-height: 100px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(7) {
+  transition-delay: 0s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(8) {
+  transition-delay: 0.05s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(9) {
+  transition-delay: 0.1s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(10) {
+  transition-delay: 0.15s;
+}
+
+.provincias-mapa .accordion-item:nth-of-type(11) {
+  transition-delay: 0.2s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(7) {
+  transition-delay: 0.1s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(8) {
+  transition-delay: 0.15s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(9) {
+  transition-delay: 0.2s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(10) {
+  transition-delay: 0.25s;
+}
+
+#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(11) {
+  transition-delay: 0.3s;
+}
+
+#ver-mas-btn {
+  transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+#ver-mas-btn::after {
+  content: "Ver más ▾";
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+  display: inline-block;
+}
+#ver-mas-btn:hover {
+  transform: translateY(-1px);
+}
+#ver-mas-btn:active {
+  transform: translateY(0);
+}
+
+#toggle-provincias:checked ~ .provincias-mapa #ver-mas-btn::after {
+  content: "Ver menos ▴";
+}
+
+.provincias-mapa {
+  position: relative;
+}
+
 /* --- CONTACTO ---*/
 .titulo_contacto {
   font-size: 5rem;
@@ -839,8 +922,8 @@ footer {
 .accordion .accordion-item .accordion-header {
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
@@ -852,8 +935,8 @@ footer {
   border-radius: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background: transparent;
   position: relative;
   z-index: 2;
@@ -936,6 +1019,23 @@ footer {
   }
 }
 
+.titulo_lugar_mapa {
+  font-family: var(--font-Poppins);
+  color: white;
+  font-weight: 300;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  font-size: 2rem !important;
+  padding: 1rem 1rem !important;
+  font-weight: 500 !important;
+}
+@media screen and (max-width: 768px) {
+  .titulo_lugar_mapa {
+    font-size: 2rem !important;
+    padding: 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nombre-provincia {
     font-size: 1.5rem !important;
@@ -943,12 +1043,14 @@ footer {
 }
 
 .lugar_provincia_prueba {
+  width: 75%;
   background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
   height: 13rem;
   background-size: cover;
 }
 @media screen and (max-width: 768px) {
   .lugar_provincia_prueba {
+    width: 90% !important;
     height: 15rem;
   }
 }
@@ -966,6 +1068,31 @@ footer {
 .degrade-sur {
   background: linear-gradient(to right, rgba(14, 16, 143, 0.6745098039), rgba(104, 125, 245, 0.5843137255));
   height: 100%;
+}
+
+.degrade-mapa {
+  background: linear-gradient(to right, rgba(0, 98, 255, 0.2117647059), rgba(84, 183, 236, 0.3803921569));
+  height: 100%;
+}
+
+.map-button {
+  position: relative;
+  background: rgba(8, 14, 56, 0.5098039216) !important;
+  border: none !important;
+  color: #f8f1f1 !important;
+  font-size: 1.5rem !important;
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.map-button:hover {
+  background: rgba(248, 241, 241, 0.5098039216) !important;
+  color: #080e38 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* --- MODAL ---*/

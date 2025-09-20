@@ -17,9 +17,7 @@
 
         .accordion-header{
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include mixins.flex-basico(flex, center, space-between);
             transition: all 0.3s ease;
             position: relative;
             z-index: 2;
@@ -30,22 +28,17 @@
                 padding: 1rem 1.25rem;
                 border-radius: 0;
                 width: 100%; 
-                display: flex; 
-                justify-content: space-between; 
-                align-items: center; 
+                @include mixins.flex-basico(flex, center, space-between);
                 background: transparent;
                 position: relative;
                 z-index: 2;
 
                 &::before{
                     content: '▼';
-                    width: 2.5rem;
-                    height: 2.5rem;
+                    @include mixins.ancho-alto(2.5rem, 2.5rem);
                     border-radius: 50%;
                     background: rgba(255,255,255,0.2);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include mixins.flex-basico(flex, center,center);
                     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                     backdrop-filter: blur(10px);
                     font-size: 1.2rem;
@@ -95,6 +88,12 @@
     @include mixins.tarjetas(rgb(149, 211, 244))
 }
 
+.titulo_lugar_mapa {
+    @include mixins.tarjetas(white);
+    @include mixins.font-padding(2rem, 1rem, 1rem);
+    font-weight: 500 !important;
+}
+
 .nombre-provincia{
 
     @media screen and (max-width: 768px){
@@ -104,11 +103,13 @@
 
 
 .lugar_provincia_prueba {
+    width: 75%;
     background-image: url("../assets/img/norte/catamarca/fiambala/fiambala1.jpg");
     height: 13rem;
     background-size: cover;
 
     @media screen and (max-width: 768px){
+        width: 90% !important;
         height: 15rem;
         
     }
@@ -128,3 +129,29 @@
     @include mixins.degrade(#0e108fac, #687df595);
     height: 100%;
 }
+
+.degrade-mapa {
+    @include mixins.degrade(#0062ff36, #54b7ec61);
+    height: 100%;
+}
+
+.map-button {
+    position: relative;
+    background: #080e3882 !important;
+    border: none !important;
+    color: #f8f1f1 !important;
+    @include mixins.font-padding(1.5rem, 0.8rem, 1.5rem);
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+        
+
+    &:hover {
+        background: #f8f1f182 !important;
+        color: #080e38 !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),0 4px 8px rgba(0, 0, 0, 0.06);
+    }
+}      
