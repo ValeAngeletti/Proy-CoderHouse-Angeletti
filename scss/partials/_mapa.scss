@@ -42,6 +42,10 @@
     }
 }
 
+.provincia{
+    gap: 0 !important;
+}
+
 .img_mapa,
 .provincias-mapa {
     width: 50%;
@@ -52,7 +56,7 @@
 }
 
 .provincias-mapa {
-
+    position: relative;
 
     @media screen and (max-width: 768px){
         margin-top: 2rem;
@@ -61,6 +65,10 @@
 
 .fondo-provincias-mapa{
     @include mixins.tarjetas-provincias(#103C65, #2E5A87 , #B8D4E3 ,#d3e3f3 , #FFFFFF );
+}
+
+.item-mapa{
+    margin-bottom: 3px;
 }
 
 .provincias-mapa .accordion-item:nth-of-type(n+7) {
@@ -80,51 +88,30 @@
 }
 
 #toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(n+7) {
-    max-height: 100px; 
+    max-height: none; 
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.1s; 
 }
 
-.provincias-mapa .accordion-item:nth-of-type(7) {
-    transition-delay: 0s;
+$start-index: 7;
+$end-index: 24;
+$delay-step: 0.05s; 
+$base-delay: 0.1s;  
+
+@for $i from $start-index through $end-index {  
+  .provincias-mapa .accordion-item:nth-of-type(#{$i}) {
+    transition-delay: $base-delay + ($i - $start-index) * $delay-step;
+  }
 }
 
-.provincias-mapa .accordion-item:nth-of-type(8) {
-    transition-delay: 0.05s;
+@for $i from $start-index through $end-index {   
+  #toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(#{$i}) {
+    margin-bottom: 3px;
+    transition-delay: $base-delay + ($i - $start-index) * $delay-step;
+  }
 }
 
-.provincias-mapa .accordion-item:nth-of-type(9) {
-    transition-delay: 0.1s;
-}
-
-.provincias-mapa .accordion-item:nth-of-type(10) {
-    transition-delay: 0.15s;
-}
-
-.provincias-mapa .accordion-item:nth-of-type(11) {
-    transition-delay: 0.2s;
-}
-
-#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(7) {
-    transition-delay: 0.1s;
-}
-
-#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(8) {
-    transition-delay: 0.15s;
-}
-
-#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(9) {
-    transition-delay: 0.2s;
-}
-
-#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(10) {
-    transition-delay: 0.25s;
-}
-
-#toggle-provincias:checked ~ .provincias-mapa .accordion-item:nth-of-type(11) {
-    transition-delay: 0.3s;
-}
 
 #ver-mas-btn {
     transition: 
@@ -156,8 +143,3 @@
         content: "Ver menos ▴";
     }
 }
-
-.provincias-mapa {
-  position: relative;
-}
-

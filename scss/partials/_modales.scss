@@ -14,8 +14,12 @@
     background-color: var(--fondo-blanco);
 
     .modal-title{
-        @include mixins.titulos-paginas (var(--azul-oscuro-general), 1rem);
+        @include mixins.titulos-paginas (var(--azul-oscuro-general), 1.7rem);
         font-family: var(--font-Poppins);
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.3rem !important;
+        }
 
     }
 }
@@ -68,4 +72,5 @@
 
 .descripcion-modal {
     @include mixins.font-padding(1.5rem, 1rem, 1rem);
+    font-family: var(--font-Poppins);
 }
