@@ -71,6 +71,9 @@
 }
 
 .descripcion-modal {
-    @include mixins.font-padding(1.5rem, 1rem, 1rem);
+    @include mixins.font-padding(2rem, 2rem, 2rem);
     font-family: var(--font-Poppins);
+    @media screen and (max-width: 768px) {
+        @include mixins.font-padding(1.5rem, 1.5rem, 1.5rem);       
+    }
 }

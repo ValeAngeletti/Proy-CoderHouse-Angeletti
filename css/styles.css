@@ -68,24 +68,24 @@ header .txt_logo .logo {
 
 /* --- INDEX ---*/
 .titulo {
-  color: var(--color-logo) !important;
-  font-size: 6rem !important;
+  color: var(--color-logo);
+  font-size: 6rem;
 }
 
 @media screen and (max-width: 768px) {
   .titulo {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
 .subtitulo {
-  color: var(--naranja-claro) !important;
-  font-size: 3rem !important;
+  color: var(--naranja-claro);
+  font-size: 3rem;
 }
 @media screen and (max-width: 768px) {
   .subtitulo {
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -94,12 +94,12 @@ header .txt_logo .logo {
 }
 
 .titulo_descubrir {
-  color: var(--color-logo) !important;
-  font-size: 4rem !important;
+  color: var(--color-logo);
+  font-size: 4rem;
 }
 @media screen and (max-width: 768px) {
   .titulo_descubrir {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
@@ -110,7 +110,7 @@ header .txt_logo .logo {
 }
 @media screen and (max-width: 768px) {
   .titulo_mapa-index {
-    font-size: 2.5rem !important;
+    font-size: 3rem;
   }
 }
 
@@ -120,23 +120,23 @@ header .txt_logo .logo {
 }
 
 .titulo_norte {
-  color: var(--texto-norte) !important;
-  font-size: 6rem !important;
+  color: var(--texto-norte);
+  font-size: 6rem;
 }
 @media screen and (max-width: 768px) {
   .titulo_norte {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
 .subtitulo_norte {
-  color: var(--texto-norte) !important;
-  font-size: 3.5rem !important;
+  color: var(--texto-norte);
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
   .subtitulo_norte {
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -361,23 +361,23 @@ header .txt_logo .logo {
 }
 
 .titulo_centro {
-  color: var(--texto-centro) !important;
-  font-size: 6rem !important;
+  color: var(--texto-centro);
+  font-size: 6rem;
 }
 @media screen and (max-width: 768px) {
   .titulo_centro {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
 .subtitulo_centro {
-  color: var(--texto-centro) !important;
-  font-size: 3.5rem !important;
+  color: var(--texto-centro);
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
   .subtitulo_centro {
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -581,23 +581,23 @@ header .txt_logo .logo {
 }
 
 .titulo_sur {
-  color: var(--texto-sur) !important;
-  font-size: 6rem !important;
+  color: var(--texto-sur);
+  font-size: 6rem;
 }
 @media screen and (max-width: 768px) {
   .titulo_sur {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
 .subtitulo_sur {
-  color: var(--texto-sur) !important;
-  font-size: 3.5rem !important;
+  color: var(--texto-sur);
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
   .subtitulo_sur {
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -717,8 +717,8 @@ header .txt_logo .logo {
 }
 
 .titulo_mapa {
-  color: var(--color-logo) !important;
-  font-size: 6rem !important;
+  color: var(--color-logo);
+  font-size: 6rem;
   padding-top: 1rem;
 }
 @media screen and (max-width: 768px) {
@@ -732,18 +732,18 @@ header .txt_logo .logo {
 }
 @media screen and (max-width: 768px) {
   .subtitulo_mapa {
-    font-size: 1.5rem !important;
-    padding: 1rem 1rem !important;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
   }
 }
 
 .titulo_provincias-mapa {
-  font-size: 3rem !important;
-  padding: 1.5rem 1.5rem !important;
+  font-size: 3rem;
+  padding: 1.5rem 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .titulo_provincias-mapa {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
@@ -997,7 +997,7 @@ header .txt_logo .logo {
 }
 @media screen and (max-width: 768px) {
   .titulo_contacto {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 
@@ -1006,8 +1006,8 @@ header .txt_logo .logo {
 }
 @media screen and (max-width: 768px) {
   .subtitulo_contacto {
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -1154,8 +1154,8 @@ footer {
   font-weight: 300;
   padding: 1rem 0;
   font-size: 2.5rem;
-  font-size: 2rem !important;
-  padding: 1rem 1rem !important;
+  font-size: 2rem;
+  padding: 1rem 1rem;
   font-weight: 500 !important;
 }
 @media screen and (max-width: 768px) {
@@ -1209,8 +1209,8 @@ footer {
   background: rgba(8, 14, 56, 0.5098039216) !important;
   border: none !important;
   color: #f8f1f1 !important;
-  font-size: 1.5rem !important;
-  padding: 0.8rem 1.5rem !important;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 12px !important;
   font-weight: 600 !important;
   cursor: pointer !important;
@@ -1228,13 +1228,13 @@ footer {
 .btn-modal {
   border: 2px solid white !important;
   color: white !important;
-  font-size: 1.5rem !important;
-  padding: 0.2rem 3rem !important;
+  font-size: 1.5rem;
+  padding: 0.2rem 3rem;
 }
 @media screen and (max-width: 768px) {
   .btn-modal {
-    font-size: 1.2rem !important;
-    padding: 0.5rem 1rem !important;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -1242,8 +1242,8 @@ footer {
   background-color: var(--fondo-blanco);
 }
 .modal-header .modal-title {
-  color: var(--azul-oscuro-general) !important;
-  font-size: 1.7rem !important;
+  color: var(--azul-oscuro-general);
+  font-size: 1.7rem;
   font-family: var(--font-Poppins);
 }
 @media screen and (max-width: 768px) {
@@ -1282,24 +1282,31 @@ footer {
 .contenido-modal-mapa .txt-mapa-modal .recomendaciones-mapa-modal {
   font-family: var(--font-playfair) !important;
   color: var(--azul-oscuro-general);
-  font-size: 3rem !important;
-  padding: 1.5rem 1.5rem !important;
+  font-size: 3rem;
+  padding: 1.5rem 1.5rem;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .contenido-modal-mapa .txt-mapa-modal .recomendaciones-mapa-modal {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
 }
 .contenido-modal-mapa .txt-mapa-modal .descripcion-mapa-modal {
   font-family: var(--font-Poppins);
-  font-size: 1.5rem !important;
-  padding: 1rem 2rem !important;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
 }
 
 .descripcion-modal {
-  font-size: 1.5rem !important;
-  padding: 1rem 1rem !important;
+  font-size: 2rem;
+  padding: 2rem 2rem;
+  font-family: var(--font-Poppins);
+}
+@media screen and (max-width: 768px) {
+  .descripcion-modal {
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+  }
 }
 
 /* --- CARRUSEL ---*/
@@ -1309,11 +1316,16 @@ footer {
 }
 
 .carousel .carousel-item {
-  height: 400px;
+  height: 600px;
 }
 .carousel .carousel-item img {
   height: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 450px;
+  }
 }
 
 .carousel-index {
@@ -1394,8 +1406,8 @@ footer {
 }
 
 .nombre-provincia {
-  font-size: 2.3rem !important;
-  padding: 1.5rem 1.5rem !important;
+  font-size: 2.3rem;
+  padding: 1.5rem 1.5rem;
   font-weight: 600 !important;
   color: white;
 }

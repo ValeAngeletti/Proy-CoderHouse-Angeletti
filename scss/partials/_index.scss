@@ -36,6 +36,6 @@
     padding-top: 1rem;
     text-align: center;
     @media screen and (max-width: 768px){
-        @include mixins.titulos-paginas-responsve();
+        font-size: 3rem;
     }
 }

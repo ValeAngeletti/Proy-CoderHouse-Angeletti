@@ -1,20 +1,20 @@
 @mixin titulos-paginas ($color, $font-size){
-    color: $color !important;
-    font-size: $font-size !important;
+    color: $color;
+    font-size: $font-size;
 }
 
 @mixin titulos-paginas-responsve{
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
 }
 
 @mixin subtitulos-paginas-responsve{
-    font-size: 1.5rem !important;
-    padding: 0 1rem !important;
+    font-size: 1.5rem ;
+    padding: 0 1rem;
 }
 
 @mixin font-padding ($font, $paddingY, $paddingX){
-    font-size: $font !important;
-    padding: $paddingY $paddingX !important;
+    font-size: $font;
+    padding: $paddingY $paddingX ;
 }
 
 @mixin ancho-alto($ancho, $alto){
