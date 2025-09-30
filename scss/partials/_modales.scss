@@ -10,6 +10,7 @@
     }
 }
 
+
 .modal-header {
     background-color: var(--fondo-blanco);
 
@@ -32,8 +33,12 @@
         align-items: center;
     }
 
-    .mapa-modal{
-        @include mixins.ancho-alto (50%, 30rem);
+    .map-container{
+        @include mixins.ancho-alto (50%, auto);
+
+        iframe{
+            @include mixins.ancho-alto (100%, 100%);
+        }
 
 
         @media screen and (max-width: 768px) {

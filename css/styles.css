@@ -1261,12 +1261,16 @@ footer {
     align-items: center;
   }
 }
-.contenido-modal-mapa .mapa-modal {
+.contenido-modal-mapa .map-container {
   width: 50%;
-  height: 30rem;
+  height: auto;
+}
+.contenido-modal-mapa .map-container iframe {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
-  .contenido-modal-mapa .mapa-modal {
+  .contenido-modal-mapa .map-container {
     width: 100%;
     height: auto;
   }
